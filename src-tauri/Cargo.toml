@@ -1,0 +1,72 @@
+[package]
+name = "gpo-autofish"
+version = "4.0.1"
+description = "Grand Piece Online fishing companion"
+authors = ["arielldev"]
+edition = "2021"
+rust-version = "1.88"
+
+[lib]
+name = "gpo_autofish_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2.11", features = ["tray-icon", "image-png"] }
+tauri-plugin-global-shortcut = "2.3"
+tauri-plugin-single-instance = "2.4"
+tauri-plugin-opener = "2.5"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+strsim = "0.11"
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing-appender = "0.2"
+thiserror = "2"
+parking_lot = "0.12"
+crossbeam-channel = "0.5"
+dirs = "6"
+image = { version = "0.25", default-features = false, features = ["png"] }
+base64 = "0.22"
+
+[target.'cfg(windows)'.dependencies.windows]
+version = "0.62"
+features = [
+  "Win32_Foundation",
+  "Win32_Graphics_Gdi",
+  "Win32_UI_WindowsAndMessaging",
+  "Win32_UI_Input_KeyboardAndMouse",
+  "Win32_UI_HiDpi",
+  "Win32_System_Threading",
+  "Win32_System_WinRT",
+  "Foundation",
+  "Foundation_Collections",
+  "Globalization",
+  "Graphics_Imaging",
+  "Media_Ocr",
+  "Storage_Streams",
+]
+
+[dev-dependencies]
+
+[features]
+default = ["capture-gdi", "ocr-windows"]
+capture-gdi = []
+ocr-windows = []
+ocr-none = []
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3
+panic = "unwind"
+strip = true

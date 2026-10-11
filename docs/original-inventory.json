@@ -1,0 +1,1859 @@
+{
+  "zip_sha256": "2815b68cafc96d0bf1bbc79c269af8e46e09c2920f6e41a556b537474d52a4d6",
+  "files": [
+    {
+      "path": "gpo-fishing-main/.gitignore",
+      "bytes": 133,
+      "sha256": "09403d243ab008c22eeed42b3d86716998c35d8c26ff1b88237c1eef79a7ce02"
+    },
+    {
+      "path": "gpo-fishing-main/CONTRIBUTING.md",
+      "bytes": 1325,
+      "sha256": "0629544de916b31a2eed22a1b28e46dd459ee17827bd05d772f45434e1f209d1"
+    },
+    {
+      "path": "gpo-fishing-main/LICENSE",
+      "bytes": 1062,
+      "sha256": "7bc2b8c1af620afb6f4c6d5ab4767f54457b093d6ad5dfd7adf557389d8121d4"
+    },
+    {
+      "path": "gpo-fishing-main/MakeItExe.bat",
+      "bytes": 2494,
+      "sha256": "81660c83b315e79fac20a0a438def8b5729a0b739fed2b133599c8ec42b62aec"
+    },
+    {
+      "path": "gpo-fishing-main/README.md",
+      "bytes": 10704,
+      "sha256": "e6e3faaff6c55c172ad3ad730d076d8fae9c5d5f3cf9a87c7f5acc37b6f6de51"
+    },
+    {
+      "path": "gpo-fishing-main/index.html",
+      "bytes": 299,
+      "sha256": "d1978a3394fa8f4dc1ec2af2fa1db9ff132c51a7b13854ab8738ab4752685357"
+    },
+    {
+      "path": "gpo-fishing-main/package-lock.json",
+      "bytes": 71911,
+      "sha256": "ac2b6af5d63f16005f967c8e1603c19127bed5b19c09c03b81c5e664126a2fa2"
+    },
+    {
+      "path": "gpo-fishing-main/package.json",
+      "bytes": 827,
+      "sha256": "bf4d6364fe280efe5165751af58b7597b90160f8bbfb39f7785f8d20071413aa"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/Cargo.lock",
+      "bytes": 145883,
+      "sha256": "352195fa0fdcb16e0db0263a14f75dec10c69d92a9b4b090d9910c1c64444b4b"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/Cargo.toml",
+      "bytes": 1777,
+      "sha256": "4e9823d62ce8b21cfe1bc3b0bec61d29da9b49b18eebb05b953d8d5e77fae6a4"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/build.rs",
+      "bytes": 39,
+      "sha256": "487059eaf8a947b80f20a9aacac038a5047b2ad69d2401b827376c67d6fe847f"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/capabilities/default.json",
+      "bytes": 728,
+      "sha256": "d99651a11411238ca2c010b89e5f82d62451729ea76256ff0a5d222ad6ebc8c0"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/128x128.png",
+      "bytes": 21343,
+      "sha256": "f8133f8532028a0a28b93142ac65a2500f25e9b1ce66d712b0872a9d29346208"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/128x128@2x.png",
+      "bytes": 62004,
+      "sha256": "f06036e5fdc5ad855b157dd89345fbca0a8b10dcbe8a1d39ac898dacc77d4381"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/32x32.png",
+      "bytes": 2476,
+      "sha256": "c90782022c455fcdbeba243200a2177e23a08b594bfc12d5ec7c45cfd6b253d3"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/64x64.png",
+      "bytes": 7356,
+      "sha256": "8d6b67a0543b782a2cdb773f9697eebb032ce1b790c1bb9fabd3d7becaf73e5d"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/Square107x107Logo.png",
+      "bytes": 16250,
+      "sha256": "7317bacf41c9bd8bf36233aa5cc7f12e0c5f5f8bf72f7ae90aa2d2798c35122c"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/Square142x142Logo.png",
+      "bytes": 25044,
+      "sha256": "f301d22fde3b5af41b0abc81b35804737526a3ae4fe6ba9561f03400754ec043"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/Square150x150Logo.png",
+      "bytes": 27272,
+      "sha256": "9a91cf479efba505532a9fceeaeb646ec4081e387105faee7582b96a28f5eedd"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/Square284x284Logo.png",
+      "bytes": 73382,
+      "sha256": "015d1846e647f88d893ca7f6e3ae4f4330a1460d621efc1128925114bf0f7a85"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/Square30x30Logo.png",
+      "bytes": 2220,
+      "sha256": "206323ba2c785aabca5ece52013ccfb2c07d73a16eaf973bb64d129807eb89c1"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/Square310x310Logo.png",
+      "bytes": 84426,
+      "sha256": "5ff1bfedf15fa3bf7a0e33889129d6326d5e64a060d1672bc00666e8c04d0453"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/Square44x44Logo.png",
+      "bytes": 4094,
+      "sha256": "f54206504d498781f5c6e0f79c3a5cf3c6ae4dc3cec363e2fe7c807f10e1aac4"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/Square71x71Logo.png",
+      "bytes": 8648,
+      "sha256": "9cbde7cec1473cf0c334cfbfa6d8618eafad0951c83b7f9b178f835d72820607"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/Square89x89Logo.png",
+      "bytes": 12268,
+      "sha256": "f7451ba2d3720f709df6b8061d5fc50fd7db9e462a5ccf288903d24b124742e4"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/StoreLogo.png",
+      "bytes": 5011,
+      "sha256": "963db5073b6e3a145fb144d6a3a969bb8dec2ad6f9764d738639e441baf8043b"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-anydpi-v26/ic_launcher.xml",
+      "bytes": 261,
+      "sha256": "760d4b8a06bf7163dd010c33ad2cac9e4a75fa0177afaba042f83e311eef0c3e"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-hdpi/ic_launcher.png",
+      "bytes": 4053,
+      "sha256": "7deba165a9fce8e58db2eb2cde05131ff5aacacd88058c3abc6773edda7b6679"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-hdpi/ic_launcher_foreground.png",
+      "bytes": 30414,
+      "sha256": "589277252b7cb6bf35f33b77b58d95d6a132736c0333f2ef90a7eb42dc64ea1a"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-hdpi/ic_launcher_round.png",
+      "bytes": 4761,
+      "sha256": "b71b8135099f2cf396e1db22223bc758f53a23189a4d9fee703422a604ac28e7"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-mdpi/ic_launcher.png",
+      "bytes": 3909,
+      "sha256": "9144682abe3cbd170437596d9035d0e8cf8107739762d42715f9d60f6a2bca40"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-mdpi/ic_launcher_foreground.png",
+      "bytes": 16492,
+      "sha256": "d3745b0ff0a5121b81688176f42ab9c732e2883480f956ea1f51de63aee33a18"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-mdpi/ic_launcher_round.png",
+      "bytes": 4516,
+      "sha256": "4fc576c75280b9ff3f8e93ee4294e93f2b8b14ee01e7e5fbecba0f56dedcbd95"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-xhdpi/ic_launcher.png",
+      "bytes": 11828,
+      "sha256": "484831dba279848dac28e6b6a26219473df0a8b16aefdc60657f1f7784688a13"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-xhdpi/ic_launcher_foreground.png",
+      "bytes": 47443,
+      "sha256": "b30928e4af79ad9e1eddfcc83bbf0db300821e6ed2987e78140da57c8e0c4b79"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-xhdpi/ic_launcher_round.png",
+      "bytes": 13643,
+      "sha256": "2554e790f7493ca819dd7a85fbd74b0544d69881b6e35abb5d2707db99a62644"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-xxhdpi/ic_launcher.png",
+      "bytes": 21602,
+      "sha256": "238d98abf114c3c9a71958cb7b46d3eeefeade13a20d701fd87a6b6ec353ab2e"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_foreground.png",
+      "bytes": 90883,
+      "sha256": "6894827c2de6ef066ed44b8987d57960ca38f24a78b4e181fec37e84b7e6e3fb"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_round.png",
+      "bytes": 25039,
+      "sha256": "e1feb229180b08b428c4306ea7686dcfb59809abde07f50ad5ce13e63c33ffbc"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher.png",
+      "bytes": 33173,
+      "sha256": "152f1369e89cfd09bf8c68291941a24c5420bf5f9f5766bfcb3da71db6bb8800"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_foreground.png",
+      "bytes": 145959,
+      "sha256": "deb0fe1ecbeda141a6c1a4a61b98a20ff857e96703165174a4e0d20cba3f83d2"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_round.png",
+      "bytes": 38497,
+      "sha256": "0b3119f6a9e0dd69072567f9bdff3ab502b8eb28ee4ead38aca2fe710db5bcaf"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/android/values/ic_launcher_background.xml",
+      "bytes": 115,
+      "sha256": "0687336f0ccc6f7ee09c7c95110667c63b75931238df779a21af401fb864cd34"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/app-icon.png",
+      "bytes": 572276,
+      "sha256": "c84882aed12b0ea2f8f371a26b7c7a01c38714f9f3cd21cd7865f040ab50d76e"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/icon.icns",
+      "bytes": 1102880,
+      "sha256": "2a8332ff471c8466228882b42b4ec151807338846864b6404548a048151e7c92"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/icon.ico",
+      "bytes": 79945,
+      "sha256": "d26050f78294d5ba6aa8cf1d5d7b0ba3b879942aefab503fb38710dd03f76ab3"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/icon.png",
+      "bytes": 194335,
+      "sha256": "4f8375877b8c5986f2a88b3599f86c9ac1376cebd4bd46c53669258fe79044ee"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-20x20@1x.png",
+      "bytes": 1157,
+      "sha256": "7a38a14ca9bb244b3a1c06a18754c93e62d86c394aea30d0adb90024d2c56aac"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-20x20@2x-1.png",
+      "bytes": 3306,
+      "sha256": "207f0ba1bc9f7caf3a7ff85a47a4e8a0ce569e48152d380db1139a49d686137c"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-20x20@2x.png",
+      "bytes": 3306,
+      "sha256": "207f0ba1bc9f7caf3a7ff85a47a4e8a0ce569e48152d380db1139a49d686137c"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-20x20@3x.png",
+      "bytes": 6161,
+      "sha256": "c0f21b569c6aad4026ff9b04719613d93dedd01b84e864964f0e0b392ae82c20"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-29x29@1x.png",
+      "bytes": 1961,
+      "sha256": "7802fc39ea9c02397839f5834b1536c771aad8b2f2a60186d325f02ce69763f1"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-29x29@2x-1.png",
+      "bytes": 5885,
+      "sha256": "7120613c4aed872bb074ddd4c7a129992e55c5bc8556ae9ba5b46becbbcf59b3"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-29x29@2x.png",
+      "bytes": 5885,
+      "sha256": "7120613c4aed872bb074ddd4c7a129992e55c5bc8556ae9ba5b46becbbcf59b3"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-29x29@3x.png",
+      "bytes": 11006,
+      "sha256": "ea694955183c8070657c9c9f9648fc7116e5b72a82bfa1f3d4f00426b4efff9d"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-40x40@1x.png",
+      "bytes": 3306,
+      "sha256": "207f0ba1bc9f7caf3a7ff85a47a4e8a0ce569e48152d380db1139a49d686137c"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-40x40@2x-1.png",
+      "bytes": 9704,
+      "sha256": "d8664840243e614637efcf11a17d3a47ac2455452cd219b9aae8bcdfad744ca3"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-40x40@2x.png",
+      "bytes": 9704,
+      "sha256": "d8664840243e614637efcf11a17d3a47ac2455452cd219b9aae8bcdfad744ca3"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-40x40@3x.png",
+      "bytes": 18004,
+      "sha256": "cdc530a3de764434e2fa0444f3448a2a9fed9c6df8e01d7de22560dbc51cb57b"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-512@2x.png",
+      "bytes": 510201,
+      "sha256": "56c1b2249a6779d032480185876c9bf8ec560dac0168e8dc5c347d02132f41ec"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-60x60@2x.png",
+      "bytes": 18004,
+      "sha256": "cdc530a3de764434e2fa0444f3448a2a9fed9c6df8e01d7de22560dbc51cb57b"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-60x60@3x.png",
+      "bytes": 33246,
+      "sha256": "e08785f717b0b3a8fc44b380fa96438aa507bdb315dbf408aeab081d7b02aca1"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-76x76@1x.png",
+      "bytes": 9021,
+      "sha256": "4a762f221e197b2c5cf0c8b8efe1768a3cc907121ab16c32143ce9e7c64243c2"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-76x76@2x.png",
+      "bytes": 25887,
+      "sha256": "d7518bd3b69a71750a11eb97d57422cefe11dc4ecbab2f54a9c2b0d400d2a699"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/icons/ios/AppIcon-83.5x83.5@2x.png",
+      "bytes": 29856,
+      "sha256": "14b758c62ec2e0515fdff49398f088ac0bf9a14963711e4e901fe2c7a5007255"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/latest-json.ps1",
+      "bytes": 1137,
+      "sha256": "c3ddcc41cd59f6a416fbfd6f9f7df5a2b3a768554eb7a41edfc11e2e82b28feb"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/app.rs",
+      "bytes": 5452,
+      "sha256": "1c32601070a31475133a7f046f8c085d251e4227da7ccc557f28b43733e6aa1e"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/bot/actions.rs",
+      "bytes": 7984,
+      "sha256": "2170ceaf241fb3b432d0fa5e6d9f5a22288e0018cfb7dcc4a2da093acc570f93"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/bot/ctx.rs",
+      "bytes": 5140,
+      "sha256": "92d718cfb5d4f7c5eb7deac35fc8f772045d711e17a224d874ed12b128bbb12e"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/bot/machine.rs",
+      "bytes": 20253,
+      "sha256": "94ae644d116e013c41994b8ab434cade1237d023a94005c41d4a015bd5a42bba"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/bot/mod.rs",
+      "bytes": 6105,
+      "sha256": "e0c330d2ba59153f2631c4d6e9736d386231981941f8f542faa0da3a10bb3d2c"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/bot/session.rs",
+      "bytes": 4249,
+      "sha256": "6f6a7511feca728e6f29337b5757d2feedbdb55c1535e1d2712eb9174a472931"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/bot/trace.rs",
+      "bytes": 4712,
+      "sha256": "19379e725c12b04447a199d6a4e1a327f0119ae04417bb9f998b5e28d9633df7"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/bot/watchdog.rs",
+      "bytes": 1450,
+      "sha256": "5f96f3d6227363b347c49d6c9b2d1dc4a16567348737e0a127634e37381ea3a7"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/commands.rs",
+      "bytes": 14109,
+      "sha256": "d4a870885dce214817390d5ec5ea37912fdfb96afdd3471b77bb57f90ae4b52f"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/config.rs",
+      "bytes": 17172,
+      "sha256": "c849cc095f6aee865a5dcd97aaf587d7b07e41ae6ce2a49a17a46c2cb509c5b1"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/core/controller.rs",
+      "bytes": 12617,
+      "sha256": "a00bd73e17cf855cd30a27f3d744187bec7df702c482e0cdddd267243f794632"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/core/fruit.rs",
+      "bytes": 13435,
+      "sha256": "9159fff858e6e3c36bf6f281bb6e062a99c9bbb1d7c11c28fba9e74e462805eb"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/core/mod.rs",
+      "bytes": 84,
+      "sha256": "8122dc0ce30989b779a138c609a02e764e4a2196049d2c91b739cd476e70fcc8"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/core/platform/mock.rs",
+      "bytes": 2874,
+      "sha256": "dcac540e56abab390e60b1f496e7a3dd2e4d44655da2298bd0b9d6dd8c298f0b"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/core/platform/mod.rs",
+      "bytes": 1990,
+      "sha256": "01eb9fa879599ac91409e95dfbca7d1e6660f3f86c78edb3f5c98066a5583c63"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/core/platform/windows/capture.rs",
+      "bytes": 2498,
+      "sha256": "b496d53732f13d3a37737a85d82fbc510ba2bc0ced89b235e4a0ee2449cf6a34"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/core/platform/windows/capture_dxgi.rs",
+      "bytes": 7824,
+      "sha256": "0631ce7864e97dd926913873972f60504c7d42fa2c59d89d30bb6532eaed8e24"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/core/platform/windows/input.rs",
+      "bytes": 5262,
+      "sha256": "a81715bffccabac70fd36c4ba21cf473dd2be874b4a4f40188af297ff2e60e2f"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/core/platform/windows/mod.rs",
+      "bytes": 83,
+      "sha256": "faadd4d7a7523befbcbf991847cd20f1457135ed5b595e1fa6d89ac484c7591e"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/core/platform/windows/ocr.rs",
+      "bytes": 2732,
+      "sha256": "faad9cf5e9295077f3e1518739733b82c39eeffbc07264b14195b0c8da53d5b2"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/core/platform/windows/window.rs",
+      "bytes": 3692,
+      "sha256": "542a2375d1912def82060f4bd4063482dd98e838c6ec0902d218aa368692d81e"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/core/types.rs",
+      "bytes": 5353,
+      "sha256": "ab4482bccffab70ae79a885fb490049e6743a2b281dd830827e2311cf36bad0c"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/core/vision.rs",
+      "bytes": 12848,
+      "sha256": "5592a9e17a1e99156dea5dcc229f475c35be3a69d368c3e749f6234f546be458"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/events.rs",
+      "bytes": 2927,
+      "sha256": "98f2ed89047794db960cff86a710cf3b91d794746e6e49af1cb2dd8d12f9ec3e"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/hotkeys.rs",
+      "bytes": 2074,
+      "sha256": "d8abe25d3f14eb92c7d5d46996a92bd3d1cabaf72627c67ce598a3e26b4d8356"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/lib.rs",
+      "bytes": 3040,
+      "sha256": "6292c0d6b52d0fff9de5b73605b36d5518ef691a1545e9188a404f656bbf59a5"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/main.rs",
+      "bytes": 111,
+      "sha256": "31f6cde04f3ad6ff27f0af694f9d7d3c979806ceb412f9660eed97b398be6868"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/tray.rs",
+      "bytes": 2434,
+      "sha256": "54248cf46145eb02e142778aac1297c5b6f53c2f12790b7528f13aa6fd423153"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/webhook.rs",
+      "bytes": 6299,
+      "sha256": "05d9d4f765e6c3262e03e31e65a1b3d3e58a7d130882bbb8e4d176166ac70b70"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/src/windows.rs",
+      "bytes": 11718,
+      "sha256": "4f910cbb2d937765a7e5b53a6806ea92dc71559feece1f25b21156ea13a6cf6d"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/tauri.conf.json",
+      "bytes": 2778,
+      "sha256": "ee2d96eb3c903a58c48a7e63ce4e40014dcb568213a83f67ae866165cc0b686c"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/tests/fixtures/reels/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "gpo-fishing-main/src-tauri/tests/replay.rs",
+      "bytes": 1732,
+      "sha256": "c7c82d744942cbbf49ee5aacc66f51004fefa3231602deaf9d0958b46e236af5"
+    },
+    {
+      "path": "gpo-fishing-main/src/assets/logo.png",
+      "bytes": 21343,
+      "sha256": "f8133f8532028a0a28b93142ac65a2500f25e9b1ce66d712b0872a9d29346208"
+    },
+    {
+      "path": "gpo-fishing-main/src/components/ConnectGate.tsx",
+      "bytes": 2771,
+      "sha256": "132f44b2d049ba5a7edc97907f43e9eee3eed9e93fd16b0f8f3459c075c2b4a3"
+    },
+    {
+      "path": "gpo-fishing-main/src/components/LiveAreas.tsx",
+      "bytes": 5596,
+      "sha256": "dde0e4c627192e8d56c890d05e21dca0d31ad86a3c5c7ad922fad02b55175e55"
+    },
+    {
+      "path": "gpo-fishing-main/src/components/LogList.tsx",
+      "bytes": 2603,
+      "sha256": "5ea3dd7ebf257eb4161d7ad5ad026a133055aa3702c7ff007ebf378f7de8534b"
+    },
+    {
+      "path": "gpo-fishing-main/src/components/PointField.tsx",
+      "bytes": 1793,
+      "sha256": "4997b18f8753b258be6a65d8d830c3b8505b351d92125cfbe1574ee44203c319"
+    },
+    {
+      "path": "gpo-fishing-main/src/components/RegionField.tsx",
+      "bytes": 3813,
+      "sha256": "ee9c302edc555ddb7e6d71dce56add8b34991bc3260f91bf8e392a65413f5fc5"
+    },
+    {
+      "path": "gpo-fishing-main/src/components/SetupGuide.tsx",
+      "bytes": 16081,
+      "sha256": "16b2b9e5e2dea7b58097b173177a41bf453aea141fdd5f31d928ebd607d1ec57"
+    },
+    {
+      "path": "gpo-fishing-main/src/components/StateIcon.tsx",
+      "bytes": 1914,
+      "sha256": "2e5758b269ea037396bfe43e9495a1de114e6f05afb6010b3bde09e653a9add0"
+    },
+    {
+      "path": "gpo-fishing-main/src/components/primitives.tsx",
+      "bytes": 13835,
+      "sha256": "a65e67a99115b7b07baddda93b8ffb87800ad10828e50182c65aa86099762473"
+    },
+    {
+      "path": "gpo-fishing-main/src/index.css",
+      "bytes": 2477,
+      "sha256": "35df21086c0ee8988937fa9280d6a6c13f9ba57b4445452f97c0dd734843a36e"
+    },
+    {
+      "path": "gpo-fishing-main/src/lib/ipc.ts",
+      "bytes": 3662,
+      "sha256": "59a0cacc67cba97ecf406e868098ff662ececaf01a202f4a1d42dfe0dda95716"
+    },
+    {
+      "path": "gpo-fishing-main/src/lib/store.ts",
+      "bytes": 3901,
+      "sha256": "1faa2f05332fb3905fbfa356f10dac96b4b5be3187b9225bf193caea37b723c4"
+    },
+    {
+      "path": "gpo-fishing-main/src/lib/types.ts",
+      "bytes": 6091,
+      "sha256": "d470d6b37ac3854c190ab4a2b5b218f4add2a138d181f72a19d132e328e12e0c"
+    },
+    {
+      "path": "gpo-fishing-main/src/main.tsx",
+      "bytes": 615,
+      "sha256": "bc77579f8c2e5dbd35b6a9a46122325bb9844353245bb7abc58d912480ce317a"
+    },
+    {
+      "path": "gpo-fishing-main/src/pages/Dashboard.tsx",
+      "bytes": 4455,
+      "sha256": "4eb12abc24d72a9c0ced856f1ca02abb06e623c1c8d553d8aeacc4d14f9a3386"
+    },
+    {
+      "path": "gpo-fishing-main/src/pages/Features.tsx",
+      "bytes": 12240,
+      "sha256": "bd899cf97c6968af33f8e7e1506be9181869f0a5ad1a67ac54bed11fc0ce2bdd"
+    },
+    {
+      "path": "gpo-fishing-main/src/pages/Settings.tsx",
+      "bytes": 12700,
+      "sha256": "6397b1889253a847427859af96e3887a5f121d454ae8c02372ccd706d88c213f"
+    },
+    {
+      "path": "gpo-fishing-main/src/pages/Setup.tsx",
+      "bytes": 6464,
+      "sha256": "a4efe06a9ed6f0bfc82b8a109e3ad398bcc183e30fea7bac8b3ae1f5c7c8cac0"
+    },
+    {
+      "path": "gpo-fishing-main/src/windows/Guide.tsx",
+      "bytes": 3804,
+      "sha256": "297736657837ad82ba67751e734b19c4450f1dcfb1bf8149aea96d5ca52a61f1"
+    },
+    {
+      "path": "gpo-fishing-main/src/windows/Hud.tsx",
+      "bytes": 4443,
+      "sha256": "d8feb4bcd4a711694dca130345a2c6b677380211a72df4d79435b6d6f1f7efea"
+    },
+    {
+      "path": "gpo-fishing-main/src/windows/Overlay.tsx",
+      "bytes": 16922,
+      "sha256": "98f58dbd6f7d9bd8b3221d738e7c8c80d433e63fd21f8f6d3f0a4c6fb5bbc6bb"
+    },
+    {
+      "path": "gpo-fishing-main/src/windows/Panel.tsx",
+      "bytes": 6383,
+      "sha256": "7068b447030d090cff4b0b6cdf2ce75e090bacf1b215cbc57e2f1bce583bd169"
+    },
+    {
+      "path": "gpo-fishing-main/tsconfig.json",
+      "bytes": 461,
+      "sha256": "4a7d2f6b259c8fda1f4f7c7079ab240280e21dba7e928a123bbf2ae43627dbfa"
+    },
+    {
+      "path": "gpo-fishing-main/vite.config.ts",
+      "bytes": 467,
+      "sha256": "973419ff7df24ec33c66d64aed3d1f1130af19aad94d6535f5390cec66c64dab"
+    }
+  ],
+  "source_files": 66,
+  "evidence": [
+    {
+      "file": "gpo-fishing-main/CONTRIBUTING.md",
+      "line": 47,
+      "text": "git clone https://github.com/yourusername/gpo-autofish.git"
+    },
+    {
+      "file": "gpo-fishing-main/MakeItExe.bat",
+      "line": 5,
+      "text": "set \"DISCORD=https://discord.gg/unPZxXAtfb\""
+    },
+    {
+      "file": "gpo-fishing-main/MakeItExe.bat",
+      "line": 16,
+      "text": "    echo [!] Node.js not found. Install Node 20+ from https://nodejs.org and run this again."
+    },
+    {
+      "file": "gpo-fishing-main/MakeItExe.bat",
+      "line": 23,
+      "text": "    echo [!] Rust not found. Install it from https://rustup.rs and run this again."
+    },
+    {
+      "file": "gpo-fishing-main/MakeItExe.bat",
+      "line": 52,
+      "text": "set /p TAURI_SIGNING_PRIVATE_KEY=<\"%KEY%\""
+    },
+    {
+      "file": "gpo-fishing-main/MakeItExe.bat",
+      "line": 53,
+      "text": "set \"TAURI_SIGNING_PRIVATE_KEY_PASSWORD=\""
+    },
+    {
+      "file": "gpo-fishing-main/MakeItExe.bat",
+      "line": 65,
+      "text": "powershell -NoProfile -ExecutionPolicy Bypass -File \"%~dp0src-tauri\\latest-json.ps1\" -Out \"%OUT%\""
+    },
+    {
+      "file": "gpo-fishing-main/README.md",
+      "line": 1,
+      "text": "[![Discord](https://img.shields.io/badge/Discord-Join%20Server-7289da?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/unPZxXAtfb)"
+    },
+    {
+      "file": "gpo-fishing-main/README.md",
+      "line": 5,
+      "text": "**💬 Join our Discord server:** https://discord.gg/unPZxXAtfb"
+    },
+    {
+      "file": "gpo-fishing-main/README.md",
+      "line": 90,
+      "text": "Requirements: [Node.js 20+](https://nodejs.org) and [Rust](https://rustup.rs). WebView2 is already on Windows 11."
+    },
+    {
+      "file": "gpo-fishing-main/README.md",
+      "line": 92,
+      "text": "1. **Download the repository** as ZIP and extract it, or `git clone https://github.com/arielldev/gpo-fishing.git`"
+    },
+    {
+      "file": "gpo-fishing-main/README.md",
+      "line": 209,
+      "text": "**💬 Discord:** https://discord.gg/unPZxXAtfb"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/latest-json.ps1",
+      "line": 6,
+      "text": "$repo = $conf.plugins.updater.endpoints[0] -replace \"^https://github\\.com/\", \"\" -replace \"/releases/.*$\", \"\""
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/latest-json.ps1",
+      "line": 20,
+      "text": "      url       = \"https://github.com/$repo/releases/download/v$version/$asset\""
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/app.rs",
+      "line": 6,
+      "text": "use crossbeam_channel::{unbounded, Receiver, Sender};"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/app.rs",
+      "line": 38,
+      "text": "    let _ = std::fs::create_dir_all(&dir);"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/app.rs",
+      "line": 46,
+      "text": "    let (tx, rx) = unbounded::<BotEvent>();"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/bot/machine.rs",
+      "line": 503,
+      "text": "        let (tx, rx) = crossbeam_channel::unbounded();"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/bot/machine.rs",
+      "line": 517,
+      "text": "            is_foreground: true,"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/bot/trace.rs",
+      "line": 41,
+      "text": "        fs::create_dir_all(&dir)?;"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/bot/trace.rs",
+      "line": 121,
+      "text": "        let _ = fs::write(self.dir.join(format!(\"{}.json\", self.stem)), serde_json::to_vec_pretty(&doc).unwrap_or_default());"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/bot/trace.rs",
+      "line": 129,
+      "text": "    let mut list: Vec<Value> = fs::read_to_string(&path).ok().and_then(|s| serde_json::from_str(&s).ok()).unwrap_or_default();"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/bot/trace.rs",
+      "line": 135,
+      "text": "    let _ = fs::write(path, serde_json::to_vec_pretty(&list).unwrap_or_default());"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/commands.rs",
+      "line": 74,
+      "text": "    *st.settings.write() = settings.clone();"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/config.rs",
+      "line": 347,
+      "text": "        let Ok(entries) = fs::read_dir(&traces) else { return 0 };"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/config.rs",
+      "line": 352,
+      "text": "                if let Ok(files) = fs::read_dir(&path) {"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/config.rs",
+      "line": 355,
+      "text": "                let _ = fs::remove_dir_all(&path);"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/config.rs",
+      "line": 374,
+      "text": "        fs::read_to_string(self.stats_path())"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/config.rs",
+      "line": 381,
+      "text": "        fs::create_dir_all(&self.dir)?;"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/config.rs",
+      "line": 386,
+      "text": "        let mut settings = match fs::read_to_string(self.settings_path()) {"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/config.rs",
+      "line": 411,
+      "text": "        fs::create_dir_all(&self.dir)?;"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/config.rs",
+      "line": 417,
+      "text": "        if let Ok(rd) = fs::read_dir(self.presets_dir()) {"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/config.rs",
+      "line": 442,
+      "text": "        fs::create_dir_all(self.presets_dir())?;"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/config.rs",
+      "line": 447,
+      "text": "        let s = fs::read_to_string(self.preset_path(name)?)?;"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/config.rs",
+      "line": 452,
+      "text": "        fs::remove_file(self.preset_path(name)?)?;"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/config.rs",
+      "line": 459,
+      "text": "    fs::write(&tmp, bytes)?;"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/config.rs",
+      "line": 460,
+      "text": "    fs::rename(&tmp, path)?;"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/config.rs",
+      "line": 594,
+      "text": "          \"kp\":0.2,\"kd\":0.4,\"webhook_url\":\"https://x\",\"webhook_enabled\":true"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/mod.rs",
+      "line": 62,
+      "text": "        input: Arc::new(windows::input::SendInputBackend::new()),"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/capture.rs",
+      "line": 3,
+      "text": "    BitBlt, CreateCompatibleBitmap, CreateCompatibleDC, DeleteDC, DeleteObject, GetDC, GetDIBits,"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/capture.rs",
+      "line": 32,
+      "text": "            let screen = GetDC(Some(HWND::default()));"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/capture.rs",
+      "line": 34,
+      "text": "                return Err(PlatformError::Capture(\"GetDC\".into()));"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/capture_dxgi.rs",
+      "line": 32,
+      "text": "unsafe impl Send for Session {}"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/capture_dxgi.rs",
+      "line": 136,
+      "text": "                    .map(|tex| s.context.CopyResource(&s.staging, &tex));"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/input.rs",
+      "line": 2,
+      "text": "    MapVirtualKeyW, SendInput, VkKeyScanW, INPUT, INPUT_0, INPUT_KEYBOARD, INPUT_MOUSE,"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/input.rs",
+      "line": 17,
+      "text": "pub struct SendInputBackend;"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/input.rs",
+      "line": 19,
+      "text": "impl SendInputBackend {"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/input.rs",
+      "line": 25,
+      "text": "impl Default for SendInputBackend {"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/input.rs",
+      "line": 33,
+      "text": "        SendInput(inputs, std::mem::size_of::<INPUT>() as i32);"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/input.rs",
+      "line": 99,
+      "text": "impl Input for SendInputBackend {"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/ocr.rs",
+      "line": 8,
+      "text": "use windows::Win32::System::WinRT::{RoInitialize, RO_INIT_MULTITHREADED};"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/ocr.rs",
+      "line": 21,
+      "text": "                let _ = RoInitialize(RO_INIT_MULTITHREADED);"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/ocr.rs",
+      "line": 33,
+      "text": "unsafe impl Send for WindowsOcr {}"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/ocr.rs",
+      "line": 34,
+      "text": "unsafe impl Sync for WindowsOcr {}"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/window.rs",
+      "line": 7,
+      "text": "    SendInput, INPUT, INPUT_0, INPUT_KEYBOARD, KEYBDINPUT, KEYBD_EVENT_FLAGS, KEYEVENTF_KEYUP, VK_MENU,"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/window.rs",
+      "line": 61,
+      "text": "        SendInput(&[mk(false), mk(true)], std::mem::size_of::<INPUT>() as i32);"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/platform/windows/window.rs",
+      "line": 112,
+      "text": "                is_foreground: fg == h || ours,"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/core/types.rs",
+      "line": 184,
+      "text": "    pub is_foreground: bool,"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/hotkeys.rs",
+      "line": 63,
+      "text": "            *st.settings.write() = s.clone();"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/tray.rs",
+      "line": 32,
+      "text": "                    *st.settings.write() = s.clone();"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/webhook.rs",
+      "line": 4,
+      "text": "use crossbeam_channel::{unbounded, Receiver, Sender};"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/webhook.rs",
+      "line": 29,
+      "text": "        let (tx, rx) = unbounded::<Value>();"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/src/windows.rs",
+      "line": 253,
+      "text": "    *st.settings.write() = s.clone();"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/tauri.conf.json",
+      "line": 2,
+      "text": "  \"$schema\": \"https://schema.tauri.app/config/2\","
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/tauri.conf.json",
+      "line": 8,
+      "text": "    \"devUrl\": \"http://localhost:1420\","
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/tauri.conf.json",
+      "line": 79,
+      "text": "      \"csp\": null"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/tauri.conf.json",
+      "line": 105,
+      "text": "      \"endpoints\": [\"https://github.com/arielldev/gpo-fishing/releases/latest/download/latest.json\"],"
+    },
+    {
+      "file": "gpo-fishing-main/src-tauri/tests/replay.rs",
+      "line": 9,
+      "text": "    if let Ok(rd) = std::fs::read_dir(dir) {"
+    },
+    {
+      "file": "gpo-fishing-main/src/components/ConnectGate.tsx",
+      "line": 17,
+      "text": "      await api.openUrl(\"https://www.roblox.com/games/1730877806/Grand-Piece-Online\");"
+    },
+    {
+      "file": "gpo-fishing-main/src/lib/types.ts",
+      "line": 7,
+      "text": "export type WindowInfo = { client: PxRect; is_foreground: boolean; visible: boolean; dpi: number };"
+    },
+    {
+      "file": "gpo-fishing-main/src/pages/Features.tsx",
+      "line": 161,
+      "text": "              placeholder=\"https://discord.com/api/webhooks/…\""
+    },
+    {
+      "file": "gpo-fishing-main/src/pages/Settings.tsx",
+      "line": 43,
+      "text": "      await u.downloadAndInstall();"
+    },
+    {
+      "file": "gpo-fishing-main/src/pages/Settings.tsx",
+      "line": 252,
+      "text": "            <Button size=\"sm\" kind=\"ghost\" onClick={() => api.openUrl(\"https://discord.gg/unPZxXAtfb\")}>"
+    },
+    {
+      "file": "gpo-fishing-main/src/windows/Panel.tsx",
+      "line": 61,
+      "text": "      await update.downloadAndInstall();"
+    }
+  ],
+  "npm": [
+    {
+      "package": "node_modules/@jridgewell/gen-mapping",
+      "version": "0.3.13",
+      "source": "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz",
+      "integrity": "sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@jridgewell/remapping",
+      "version": "2.3.5",
+      "source": "https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz",
+      "integrity": "sha512-LI9u/+laYG4Ds1TDKSJW2YPrIlcVYOwi2fUC6xB43lueCjgxV4lffOCZCtYFiH6TNOX+tQKXx97T4IKHbhyHEQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@jridgewell/resolve-uri",
+      "version": "3.1.2",
+      "source": "https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz",
+      "integrity": "sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@jridgewell/sourcemap-codec",
+      "version": "1.6.0",
+      "source": "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.6.0.tgz",
+      "integrity": "sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@jridgewell/trace-mapping",
+      "version": "0.3.31",
+      "source": "https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz",
+      "integrity": "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@oxc-project/types",
+      "version": "0.148.0",
+      "source": "https://registry.npmjs.org/@oxc-project/types/-/types-0.148.0.tgz",
+      "integrity": "sha512-Nm4s/jB+4FpFsPhWGEC4h7rzksesmtnMXomo6rCMcg/b8zLQuOziRgkCS1fxDCXOlJB/6Q8oABOZ/OP6RIPj9A==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-android-arm-eabi",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-android-arm-eabi/-/binding-android-arm-eabi-1.2.7.tgz",
+      "integrity": "sha512-EypzgnYCwyVY4NDHKzGmNJT5b+XaQEBniHxsMdeIQLB/tcCzZnhqrzHpZFbX9iaxx+5RiB8caATBtfvZP7zVxQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-android-arm64",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-android-arm64/-/binding-android-arm64-1.2.7.tgz",
+      "integrity": "sha512-l17HE9EweWaqJZhuUuNBN/FzM62xw+DECVnJyvMsxn8vJFAGLy5QfLDoYAcronkAN8VxKZHezDpulHDPx95vFw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-darwin-arm64",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-darwin-arm64/-/binding-darwin-arm64-1.2.7.tgz",
+      "integrity": "sha512-8ED8ELFvHXc6OCETIn4gXObPiaR6bckM/ipXtbzlPVDRMBfEGjCKgO90F9YtfdpDatVx/ZQw7aZ1vUMf/+T3Mw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-darwin-x64",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-darwin-x64/-/binding-darwin-x64-1.2.7.tgz",
+      "integrity": "sha512-/WPripjtiAIZ2tWY7ddijORT0Ujg87wxWW/qcoFVCKAWVDPhtY0xr7Dj0M3GyNGz60jGwTElhro/mkF9dT7dDQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-freebsd-x64",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-freebsd-x64/-/binding-freebsd-x64-1.2.7.tgz",
+      "integrity": "sha512-14DI4NcqpvbICxSnGLx3PmtDaWqRP/KGSGb6C+JLLVPeZRl6dKdHba3pGsqT3vpdTqhEYIPG0MMQ8c0xYqoJxA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-linux-arm-gnueabihf",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-1.2.7.tgz",
+      "integrity": "sha512-bxrWIRvHWQvbJwi+VIie/kDJmQxcNE6xxWwZdqF/ExVAigtHkv54WTLQPb+QsZdnFy18fg7JPfWGL0RH6vwIlQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-linux-arm64-gnu",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-1.2.7.tgz",
+      "integrity": "sha512-toOY2BChBZyuxU7OYX6Tn389di4IzAqPTycVcci0O7FSfBqzRB3RZn+K5Is6ANf4tmgRd/K1yZTsNTXbkXsnLg==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-linux-arm64-musl",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-linux-arm64-musl/-/binding-linux-arm64-musl-1.2.7.tgz",
+      "integrity": "sha512-lAIXTH/aiLRLxsTgQvfhjo4K1ydWIp00+V0voOr9beb/9ZmkUFrSIb03dXNFRgMNvkE6oGsF10ioQ6UsI+vS5Q==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-linux-ppc64-gnu",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-1.2.7.tgz",
+      "integrity": "sha512-kdnwS28Pkenp/mZMRwjXXXwxQ7pIsm+bF919LUK93BOyhcLsrVKdP2p9fxpiPNPAbNuch8ypQt0pm2P2LYCAGg==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-linux-s390x-gnu",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-1.2.7.tgz",
+      "integrity": "sha512-516OdsyLdr5E65paF3yBF55t8mfm9+gmtCsK3xI7XKXIT7EfRlHhxL8K/NR6Hu8BWSgF5+1w74lTL0+nxcc8Qw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-linux-x64-gnu",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-linux-x64-gnu/-/binding-linux-x64-gnu-1.2.7.tgz",
+      "integrity": "sha512-r8/z8n7GFaYRln3xmP1Cxy0HH/HLM0uBUPkEuSVEfKGDA89M0FsZRZJRSwe/tJjRx+fpH/gjorfhB8tmEbSFLA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-linux-x64-musl",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-linux-x64-musl/-/binding-linux-x64-musl-1.2.7.tgz",
+      "integrity": "sha512-pAsE8iiDxUg1xBqdhrTfg45AVDVpirjz00sblEYClGNNcMnDb+e8beQgqIAw6LvauX/APvgxUnwrgun/YYGBhw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-openharmony-arm64",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-openharmony-arm64/-/binding-openharmony-arm64-1.2.7.tgz",
+      "integrity": "sha512-lTcIYmmnQQA8Or/2DatS6oSqcdLHvendjS+zLu+FwgToynWMRSmQdpM65fTANJgIS4mjbMOo5KT2lnT9SAb96w==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-win32-arm64-msvc",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-1.2.7.tgz",
+      "integrity": "sha512-e3Gu3WxbNk/UqQhxqU7YIYO+9ZBvWNz3U+h/qRFosscMFzdRPbXYSaSWgSnklv2fz1TgzBTcti2z35c/7irsHw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/@rolldown/binding-win32-x64-msvc/-/binding-win32-x64-msvc-1.2.7.tgz",
+      "integrity": "sha512-W/jg5qoRSqjsEv0+dZi4e687mcHqmVuU0P4fK6qS/xjetW2Gmc1W8j//z5nAeNcC8Ttm0hV46IjcYeuVwYhuiw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@rolldown/pluginutils",
+      "version": "1.0.1",
+      "source": "https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.1.tgz",
+      "integrity": "sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/node",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/node/-/node-4.3.3.tgz",
+      "integrity": "sha512-/T8IKEsf9VTU6tLjgC7+sv2mOPtQxzE2jMw7u4Tt40Tx+QSZxpzh95/H6cMKoja9XuW7iMdLJYBB0o9G1CaAgg==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/oxide",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.3.3.tgz",
+      "integrity": "sha512-krXjAikiaFSPaK/FkAQT5UTx3VormQaiZ5hBFlJZ9UFQGB/rwg1MZIhHAG9smMQRTdyJxP6Qt5MwMtdyU5FWrA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/oxide-android-arm64",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/oxide-android-arm64/-/oxide-android-arm64-4.3.3.tgz",
+      "integrity": "sha512-Y85A2gmPSkl5Ve5qR86GL4HT509cFqQh1aes9p3sSkyTPwt0Pppf3GkwGe4JPACcRYjgJIEhQgM6dBClnr0NYw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/oxide-darwin-arm64",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/oxide-darwin-arm64/-/oxide-darwin-arm64-4.3.3.tgz",
+      "integrity": "sha512-BiaWatpBcERQFDlOjRDpIVXuFK5PJez5SA4JMg6VYZdBYU+qKfV/vqjcIs+IYmtitf1xYQZTwXvU/8y4lfZUGw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/oxide-darwin-x64",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/oxide-darwin-x64/-/oxide-darwin-x64-4.3.3.tgz",
+      "integrity": "sha512-fAeUqfV5ndhxRwai8cXGzdLvul9utWOmeTkv69unv4ZXixjn61Z+p9lCWdwOwA3TYboG3BwdVuN/RDjhBRl0mw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/oxide-freebsd-x64",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/oxide-freebsd-x64/-/oxide-freebsd-x64-4.3.3.tgz",
+      "integrity": "sha512-iyf5bV6+wnAlflVeEy7R25dupxTNECZN5QMI0qNT6eT+EgaGdZcKhGkr5SdoaWiLJ3spLqIY9VCeSGrwmtg4kw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/oxide-linux-arm-gnueabihf",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/oxide-linux-arm-gnueabihf/-/oxide-linux-arm-gnueabihf-4.3.3.tgz",
+      "integrity": "sha512-aAYUprJAJQWWbRrPvtjdroZ56Md+JM8pMiopS6xGEwDfLhqj+2ver2p4nU4Mb3CRqcMmNBjo8KkUgcxhkzVQGQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/oxide-linux-arm64-gnu",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/oxide-linux-arm64-gnu/-/oxide-linux-arm64-gnu-4.3.3.tgz",
+      "integrity": "sha512-nDxldcEENOxZRzC2uu9jrutZdAAQtb+8WWDCSnWL1zvBk1+FN+x6MtDViPB5AJMfttVCUhehGWus3XBPgatM/w==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/oxide-linux-arm64-musl",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/oxide-linux-arm64-musl/-/oxide-linux-arm64-musl-4.3.3.tgz",
+      "integrity": "sha512-Md44bD6veX/PC5iyF8cDVnw4HBIANZepRZZ7a8DQOvkfo5WUBwcp6iAuCUz23u+4SUkhJlD3eL7hNdW8ezd/kA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/oxide-linux-x64-gnu",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/oxide-linux-x64-gnu/-/oxide-linux-x64-gnu-4.3.3.tgz",
+      "integrity": "sha512-tx7us1muwOKAKWao2v/GaafFeQboE6aj88vC6ziN2NCGcRm8gWUhwjzg+YdVB1e4boAtdtma4L43onunI6NS4w==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/oxide-linux-x64-musl",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/oxide-linux-x64-musl/-/oxide-linux-x64-musl-4.3.3.tgz",
+      "integrity": "sha512-SJxX60smvHgasZoBy11dX6YRjXJFovwWBoedhbQPOBzgFWBHGB+TVPWB9BxzR7TTxU8FQZAI2AyiNCMzFm8Img==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/oxide-wasm32-wasi",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/oxide-wasm32-wasi/-/oxide-wasm32-wasi-4.3.3.tgz",
+      "integrity": "sha512-jx1+rPhY/5Ympkktd656HBWEBLxP7dH06losBLjjf5vgCODXvi9KhtftWcMIwTFIDqBr7cRnQkdLnAG+IOlGvQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/oxide-win32-arm64-msvc",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/oxide-win32-arm64-msvc/-/oxide-win32-arm64-msvc-4.3.3.tgz",
+      "integrity": "sha512-3rc292Ca2ceK6Ulcc/bAVnTs/3nDtoPhyEKlgPv+yQJQi/JS/AMJlqzxvlDacL1nekbrcf6bTqp/jV4qgnPxNQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/oxide-win32-x64-msvc",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/oxide-win32-x64-msvc/-/oxide-win32-x64-msvc-4.3.3.tgz",
+      "integrity": "sha512-yJ0pwIVc/nYeGoV02WtsN8KYyLQv7kyI2wDnkezyJlGGjkd4QLwDGAwl47YpPJeuI0M0ObaXGSPjvWDPeTPggw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tailwindcss/vite",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/vite/-/vite-4.3.3.tgz",
+      "integrity": "sha512-yYU8cogLeSh/ms2jh8Fj7jaba/EWa7Ja6GoUqYZaraEuCI5YS6ms6ObZgjjedm+jm6XZjdNRWBpPP6Z86oOxcw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/api",
+      "version": "2.11.1",
+      "source": "https://registry.npmjs.org/@tauri-apps/api/-/api-2.11.1.tgz",
+      "integrity": "sha512-M2FPuYND2m+wh5hfW9ZpSdxMPdEJovPBWwoHJmwUpysTYNHaOkVFN419m/K0LIgjb/7KU2vBgsUepJWugQCvAA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/cli",
+      "version": "2.11.4",
+      "source": "https://registry.npmjs.org/@tauri-apps/cli/-/cli-2.11.4.tgz",
+      "integrity": "sha512-R8xGtMpwyetawSqm9kYOuMmEqkhUbvcUy8n0aNXIxollKBLESUu5f4Fx+64hgASYm1H+jSWq6jCW6zqTnH6hqQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/cli-darwin-arm64",
+      "version": "2.11.4",
+      "source": "https://registry.npmjs.org/@tauri-apps/cli-darwin-arm64/-/cli-darwin-arm64-2.11.4.tgz",
+      "integrity": "sha512-1ryOF3ZhpZ/nemHV5zVwBQBz9jDGKmKPvWPADOhc83ig0P4bMc2iER4NbC6r9sjeIZ6RVQ4g3RZIYvezhcl4TQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/cli-darwin-x64",
+      "version": "2.11.4",
+      "source": "https://registry.npmjs.org/@tauri-apps/cli-darwin-x64/-/cli-darwin-x64-2.11.4.tgz",
+      "integrity": "sha512-uFsGQAAfuyz1k/yGLmkWfkBlgKAqZfxqlHmLWx81QU27RJWfmbNHCIq8T8w1e+VClleIuZUjpHWfoE4E3DLo3A==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/cli-linux-arm-gnueabihf",
+      "version": "2.11.4",
+      "source": "https://registry.npmjs.org/@tauri-apps/cli-linux-arm-gnueabihf/-/cli-linux-arm-gnueabihf-2.11.4.tgz",
+      "integrity": "sha512-IaHZn5CdBL21oUmjiVOS1ctw6Ip1O0pjp70FwOWmYz1myWe0SY96ZIj2FYf7pT0m8bI2h/hrs5ZbEXXh44/MkQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/cli-linux-arm64-gnu",
+      "version": "2.11.4",
+      "source": "https://registry.npmjs.org/@tauri-apps/cli-linux-arm64-gnu/-/cli-linux-arm64-gnu-2.11.4.tgz",
+      "integrity": "sha512-N41/ukTRVe6XSuUTESuFdGeOW2i7k62tK+6gHK5Kd5/q5RPvvi19GaWAVPPb9u95HSGmTChSolBfzynUsssFaA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/cli-linux-arm64-musl",
+      "version": "2.11.4",
+      "source": "https://registry.npmjs.org/@tauri-apps/cli-linux-arm64-musl/-/cli-linux-arm64-musl-2.11.4.tgz",
+      "integrity": "sha512-v277UnT/fB64xAfSroL5N3Km3tLmvATWqJJw/wRI+g6o+HkeD0slyE7gOhNs1MbjE41R7bQOTxMVoL3aomUJmw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/cli-linux-riscv64-gnu",
+      "version": "2.11.4",
+      "source": "https://registry.npmjs.org/@tauri-apps/cli-linux-riscv64-gnu/-/cli-linux-riscv64-gnu-2.11.4.tgz",
+      "integrity": "sha512-qqgNkQ2u1yZHxjhxsZaxUtRDW8dIqIYm33rx/mzwQv0SfY9x1B+iraj8vWeFiXjjSVVhEMepXSOts1TqPzvXNQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/cli-linux-x64-gnu",
+      "version": "2.11.4",
+      "source": "https://registry.npmjs.org/@tauri-apps/cli-linux-x64-gnu/-/cli-linux-x64-gnu-2.11.4.tgz",
+      "integrity": "sha512-2VRNWl84FOH0m2giiDkO2h0QXlcMJeX+zJDpI5kDIQAx6s+geF3v48F4DXfJez4GS/FdoDGnPnw1C2iYGbQ7bQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/cli-linux-x64-musl",
+      "version": "2.11.4",
+      "source": "https://registry.npmjs.org/@tauri-apps/cli-linux-x64-musl/-/cli-linux-x64-musl-2.11.4.tgz",
+      "integrity": "sha512-o9GyhYor/nc7xarmwDE3ka2szuW3uuZzXjHWh64Q8YX5AtSgxdQkFWzrY4O8KiGtVNvFBI14H3Q49Qj5TOIP/A==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/cli-win32-arm64-msvc",
+      "version": "2.11.4",
+      "source": "https://registry.npmjs.org/@tauri-apps/cli-win32-arm64-msvc/-/cli-win32-arm64-msvc-2.11.4.tgz",
+      "integrity": "sha512-ld5Ehb598m0VkYyylRPNeCFsBe/km0jxis6KgMpl3IGY6I/i1RwQXO05I1AsXUXO2WC6AvB/Lw4qTf/asiuEiQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/cli-win32-ia32-msvc",
+      "version": "2.11.4",
+      "source": "https://registry.npmjs.org/@tauri-apps/cli-win32-ia32-msvc/-/cli-win32-ia32-msvc-2.11.4.tgz",
+      "integrity": "sha512-12Hxi0XX/H5VFxO/bGgHkFWhml9VMgEOu9CidjeCeTNQ1l6fpUlbiGgSP7CLI3PFtW9/FfbeHieZ+kyWK5H7CA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/cli-win32-x64-msvc",
+      "version": "2.11.4",
+      "source": "https://registry.npmjs.org/@tauri-apps/cli-win32-x64-msvc/-/cli-win32-x64-msvc-2.11.4.tgz",
+      "integrity": "sha512-+vDiqBIU5dMISg/wNvX3sF+ZHfgJGJ5T0AcO+EHNXV9GGAG+P5fzodlDXD3QdKCRgZxMoCm5PPvj3BqLNjBthw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/plugin-global-shortcut",
+      "version": "2.3.2",
+      "source": "https://registry.npmjs.org/@tauri-apps/plugin-global-shortcut/-/plugin-global-shortcut-2.3.2.tgz",
+      "integrity": "sha512-UReHNXrLvpEjylE4jb4oCYiy96uRykPUthoCQCmRXYrd5hs5X9DrW+qOn7GLW57EJN4tdK8bgK5twBTz2NOxzA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@tauri-apps/plugin-updater",
+      "version": "2.11.0",
+      "source": "https://registry.npmjs.org/@tauri-apps/plugin-updater/-/plugin-updater-2.11.0.tgz",
+      "integrity": "sha512-AE36XkOoSna24G40jZMY15nzAnkXEPL/73tGoseGrtGOHuI/cZwWzHpZFLjKXDPgzYZ435z1gHu28LgrsBwIxQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@types/react",
+      "version": "19.2.18",
+      "source": "https://registry.npmjs.org/@types/react/-/react-19.2.18.tgz",
+      "integrity": "sha512-AnzbBERsrLKtk2XSfTbYRLjQPdy116Sty4q+T+Bp3IC4l6jNBvreVPAHmpq9qhXQM7CXZPjLVmGMw9sy+hxQ3w==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@types/react-dom",
+      "version": "19.2.7",
+      "source": "https://registry.npmjs.org/@types/react-dom/-/react-dom-19.2.7.tgz",
+      "integrity": "sha512-I8bPpDLcHBv1qiIiXDCy71Rt8eQDKJP0sMSWJphDdAcdqiJ1sGpZamavoEIRZmYzjia9LuEb2HlYdDpmoENpvQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-aix-ppc64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-aix-ppc64/-/typescript-aix-ppc64-7.0.2.tgz",
+      "integrity": "sha512-MTKKkWB7p/0E9xi1d1tHtZ5PiLkGEMIq88pK2CubZjOsLtYTLqhgIgi6zepFa+9GHZ6h05NMCkQxGKiPXMxXtQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-darwin-arm64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-darwin-arm64/-/typescript-darwin-arm64-7.0.2.tgz",
+      "integrity": "sha512-gowzar9MwS/aRWp6f3a4KUqzRjAZjOsmGNCM6LcTgXum+dBfgsBVMN+AgvOCCbguXyick6LJhpBszxMebJ8syA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-darwin-x64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-darwin-x64/-/typescript-darwin-x64-7.0.2.tgz",
+      "integrity": "sha512-SZ9xZInqApNlNGc9s0W1VSsktYSOe9cFqNOIqmN1Gs8SmkjKZYFt017G4VwPxASInODuAdbTW7sXiFUf893RgA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-freebsd-arm64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-freebsd-arm64/-/typescript-freebsd-arm64-7.0.2.tgz",
+      "integrity": "sha512-W5NH4y/J0plIIS5b2xvTEkU7JFxyqdMAOgf+Ilhl0vHQXKO5dZoxd+C/jEtq56c4F3wk71RB4BMRQ2XdI+bwYQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-freebsd-x64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-freebsd-x64/-/typescript-freebsd-x64-7.0.2.tgz",
+      "integrity": "sha512-UMGDx5sTpzNw3WiPebH7l90IWfJggEd+egHt/q6p7/Cm3zqoV7VxkGXt+3DxPIw8CcmvAB0j3sVVfbhX+M4Tpw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-linux-arm",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-arm/-/typescript-linux-arm-7.0.2.tgz",
+      "integrity": "sha512-gffT3xPz9sR7j/YJExkyPntrI0P2EP9XbOyWzth2/Gs0RstK+90RBcO0ncXoXy/beYll1SXw846Nf2zdnEz0QQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-linux-arm64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-arm64/-/typescript-linux-arm64-7.0.2.tgz",
+      "integrity": "sha512-Qh4eU4/y3yDjnfjjyPYihMj5/ODIlmt+Bzu17OI+fiSRDW57QmU5SiN63exPRNJPKUzcc1INa1NXdrJ+MqHjUQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-linux-loong64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-loong64/-/typescript-linux-loong64-7.0.2.tgz",
+      "integrity": "sha512-uEHck9i8hoAzXPiYRib1O7miOnz23SxIeVl6F4LXox+qov1K35jHcEW6VHKvZI+pyvl7fZEP4MCU5LYvIq1GuQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-linux-mips64el",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-mips64el/-/typescript-linux-mips64el-7.0.2.tgz",
+      "integrity": "sha512-R4KvAMnE43W5Qeqb0Ly56O3mWMWIAgsMyz36DCaycd5nbg/9kzm0liw3JocfRqyJY0KPmzFjbswozXyW0DnIYA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-linux-ppc64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-ppc64/-/typescript-linux-ppc64-7.0.2.tgz",
+      "integrity": "sha512-DORx5b3sd/4S7eayxm4FQv+A7CrkUIGRaHiwI8oiHTAI1fAPWhF4J0vAlkC8biAlHSVVwxMQ3tjZ2/DVbnQiiA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-linux-riscv64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-riscv64/-/typescript-linux-riscv64-7.0.2.tgz",
+      "integrity": "sha512-wf0jqEDOjrPRnKwYRyyJDRo11KMbvMFrU+q4zqKyChODBzvlkbhNQfKvLxQCcwTpdDaXSHZTVuh0JoCrKCUMHQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-linux-s390x",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-s390x/-/typescript-linux-s390x-7.0.2.tgz",
+      "integrity": "sha512-IkwJc3L7yhytWd/ewjyxNDfOmswCm9GWMJT/ue/dU4aZNbwZeYAetq42VyLmsmSjvoX7z74X6ZaYCtzAr0EuGw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-linux-x64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-x64/-/typescript-linux-x64-7.0.2.tgz",
+      "integrity": "sha512-EYdf2cNg7rgCWJnxCdJ+F3V39O8ihb37eHAu1LK8oAFizgTQbPOK7zHHXbPt8rX24COqODXeI3sIf0fCXG7H/A==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-netbsd-arm64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-netbsd-arm64/-/typescript-netbsd-arm64-7.0.2.tgz",
+      "integrity": "sha512-+polYF4MF04aPpO5FTkHran9yUQDSXqy5GiSDKpsll5jy3l3+g9QLhpf39T+ePtefhXLOGrLl0QIjkQP6VnelA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-netbsd-x64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-netbsd-x64/-/typescript-netbsd-x64-7.0.2.tgz",
+      "integrity": "sha512-8YIT0EHM/3dq10ZOVF/A7pc/YSMtbcecct4rWtexrnSCHOPcpC2KTLXfTCR6vDpnSiY12heNb1GiN/wu+T/FyA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-openbsd-arm64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-openbsd-arm64/-/typescript-openbsd-arm64-7.0.2.tgz",
+      "integrity": "sha512-APT8+ClYnuYm1u9+kgGXoMj2VzWzcymwh2gNSQVySHfkRDGOTVkoWLjCmOQSaO+PoqQ57B0flRp9SA+7GnnkzQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-openbsd-x64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-openbsd-x64/-/typescript-openbsd-x64-7.0.2.tgz",
+      "integrity": "sha512-yX7s+Q0Dln0Dt9tEzZsAjXXR/+ytBM7AlglaqyeMPxQszJ1JhlJdZ6jLA+IzldHtflX81em7lDao1xXu+aRRkg==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-sunos-x64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-sunos-x64/-/typescript-sunos-x64-7.0.2.tgz",
+      "integrity": "sha512-dLJDGaLZ1D4HPQn62u1n8mBDkJREwMsAkCdkwd4Ieqw+x3TUyTsqY0YiBCtE6H6OzzgGk3iuZ3vFWRS+E8/d1g==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-win32-arm64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-win32-arm64/-/typescript-win32-arm64-7.0.2.tgz",
+      "integrity": "sha512-Gyl1Vy6OsWesLzmq+EP0Fb7b4Nid5232AvcA2SFcdYreldpNtYFFofPjnt62y9hQy7VTaZp65ICJjuAQRaVcIQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@typescript/typescript-win32-x64",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/@typescript/typescript-win32-x64/-/typescript-win32-x64-7.0.2.tgz",
+      "integrity": "sha512-0BQ3HkAHHlKLSp1qRvf3SUhGpGsDuhB/jgFw75guyqbxJqEaS0Cw/VFO8i2nHglJUzQCRtMMR/IBAKE3ETMC4g==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/@vitejs/plugin-react",
+      "version": "6.1.1",
+      "source": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-6.1.1.tgz",
+      "integrity": "sha512-yxLaQV9gkhS8ezJqCM6+ndU7mDY6gqAg75NQ+0IjwEI8IYOmQCgkRwHKVSfWXW076DsqMo0Dk+0FK1U+M5RgFw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/csstype",
+      "version": "3.2.3",
+      "source": "https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz",
+      "integrity": "sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/detect-libc",
+      "version": "2.1.2",
+      "source": "https://registry.npmjs.org/detect-libc/-/detect-libc-2.1.2.tgz",
+      "integrity": "sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/enhanced-resolve",
+      "version": "5.24.5",
+      "source": "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.24.5.tgz",
+      "integrity": "sha512-L1l8TNvomm6UVW5B253AGxQagSQr+vGwhMlrrfRS2qmhx46AMpMVJKQYLvWYbysTMY8VoicOvzHzoHMbyzB+4A==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/fdir",
+      "version": "6.5.0",
+      "source": "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz",
+      "integrity": "sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/fsevents",
+      "version": "2.3.3",
+      "source": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
+      "integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==",
+      "install_script": true
+    },
+    {
+      "package": "node_modules/graceful-fs",
+      "version": "4.2.11",
+      "source": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz",
+      "integrity": "sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/jiti",
+      "version": "2.7.0",
+      "source": "https://registry.npmjs.org/jiti/-/jiti-2.7.0.tgz",
+      "integrity": "sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/lightningcss",
+      "version": "1.32.0",
+      "source": "https://registry.npmjs.org/lightningcss/-/lightningcss-1.32.0.tgz",
+      "integrity": "sha512-NXYBzinNrblfraPGyrbPoD19C1h9lfI/1mzgWYvXUTe414Gz/X1FD2XBZSZM7rRTrMA8JL3OtAaGifrIKhQ5yQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/lightningcss-android-arm64",
+      "version": "1.32.0",
+      "source": "https://registry.npmjs.org/lightningcss-android-arm64/-/lightningcss-android-arm64-1.32.0.tgz",
+      "integrity": "sha512-YK7/ClTt4kAK0vo6w3X+Pnm0D2cf2vPHbhOXdoNti1Ga0al1P4TBZhwjATvjNwLEBCnKvjJc2jQgHXH0NEwlAg==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/lightningcss-darwin-arm64",
+      "version": "1.32.0",
+      "source": "https://registry.npmjs.org/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.32.0.tgz",
+      "integrity": "sha512-RzeG9Ju5bag2Bv1/lwlVJvBE3q6TtXskdZLLCyfg5pt+HLz9BqlICO7LZM7VHNTTn/5PRhHFBSjk5lc4cmscPQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/lightningcss-darwin-x64",
+      "version": "1.32.0",
+      "source": "https://registry.npmjs.org/lightningcss-darwin-x64/-/lightningcss-darwin-x64-1.32.0.tgz",
+      "integrity": "sha512-U+QsBp2m/s2wqpUYT/6wnlagdZbtZdndSmut/NJqlCcMLTWp5muCrID+K5UJ6jqD2BFshejCYXniPDbNh73V8w==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/lightningcss-freebsd-x64",
+      "version": "1.32.0",
+      "source": "https://registry.npmjs.org/lightningcss-freebsd-x64/-/lightningcss-freebsd-x64-1.32.0.tgz",
+      "integrity": "sha512-JCTigedEksZk3tHTTthnMdVfGf61Fky8Ji2E4YjUTEQX14xiy/lTzXnu1vwiZe3bYe0q+SpsSH/CTeDXK6WHig==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/lightningcss-linux-arm-gnueabihf",
+      "version": "1.32.0",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf/-/lightningcss-linux-arm-gnueabihf-1.32.0.tgz",
+      "integrity": "sha512-x6rnnpRa2GL0zQOkt6rts3YDPzduLpWvwAF6EMhXFVZXD4tPrBkEFqzGowzCsIWsPjqSK+tyNEODUBXeeVHSkw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/lightningcss-linux-arm64-gnu",
+      "version": "1.32.0",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm64-gnu/-/lightningcss-linux-arm64-gnu-1.32.0.tgz",
+      "integrity": "sha512-0nnMyoyOLRJXfbMOilaSRcLH3Jw5z9HDNGfT/gwCPgaDjnx0i8w7vBzFLFR1f6CMLKF8gVbebmkUN3fa/kQJpQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/lightningcss-linux-arm64-musl",
+      "version": "1.32.0",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm64-musl/-/lightningcss-linux-arm64-musl-1.32.0.tgz",
+      "integrity": "sha512-UpQkoenr4UJEzgVIYpI80lDFvRmPVg6oqboNHfoH4CQIfNA+HOrZ7Mo7KZP02dC6LjghPQJeBsvXhJod/wnIBg==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/lightningcss-linux-x64-gnu",
+      "version": "1.32.0",
+      "source": "https://registry.npmjs.org/lightningcss-linux-x64-gnu/-/lightningcss-linux-x64-gnu-1.32.0.tgz",
+      "integrity": "sha512-V7Qr52IhZmdKPVr+Vtw8o+WLsQJYCTd8loIfpDaMRWGUZfBOYEJeyJIkqGIDMZPwPx24pUMfwSxxI8phr/MbOA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/lightningcss-linux-x64-musl",
+      "version": "1.32.0",
+      "source": "https://registry.npmjs.org/lightningcss-linux-x64-musl/-/lightningcss-linux-x64-musl-1.32.0.tgz",
+      "integrity": "sha512-bYcLp+Vb0awsiXg/80uCRezCYHNg1/l3mt0gzHnWV9XP1W5sKa5/TCdGWaR/zBM2PeF/HbsQv/j2URNOiVuxWg==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/lightningcss-win32-arm64-msvc",
+      "version": "1.32.0",
+      "source": "https://registry.npmjs.org/lightningcss-win32-arm64-msvc/-/lightningcss-win32-arm64-msvc-1.32.0.tgz",
+      "integrity": "sha512-8SbC8BR40pS6baCM8sbtYDSwEVQd4JlFTOlaD3gWGHfThTcABnNDBda6eTZeqbofalIJhFx0qKzgHJmcPTnGdw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/lightningcss-win32-x64-msvc",
+      "version": "1.32.0",
+      "source": "https://registry.npmjs.org/lightningcss-win32-x64-msvc/-/lightningcss-win32-x64-msvc-1.32.0.tgz",
+      "integrity": "sha512-Amq9B/SoZYdDi1kFrojnoqPLxYhQ4Wo5XiL8EVJrVsB8ARoC1PWW6VGtT0WKCemjy8aC+louJnjS7U18x3b06Q==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/lucide-react",
+      "version": "1.43.0",
+      "source": "https://registry.npmjs.org/lucide-react/-/lucide-react-1.43.0.tgz",
+      "integrity": "sha512-ubtnda1fVK5ky0PNEpOmB0wiwhpZUyJiol4K14KCm+QKvuCkfUu54Et/rIjyupJpwiJ5Hg+BLQE86/GEsS+IgQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/magic-string",
+      "version": "0.30.21",
+      "source": "https://registry.npmjs.org/magic-string/-/magic-string-0.30.21.tgz",
+      "integrity": "sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/nanoid",
+      "version": "3.3.18",
+      "source": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.18.tgz",
+      "integrity": "sha512-DTg4MJbGMWkfi6VZFdNt2/caMbQy4Ou+Op/hJQvGEWcnVfoA1QA+xzRKAzw9jD6+GVOOeYr/mIcuDSdug6F6+w==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/picocolors",
+      "version": "1.1.1",
+      "source": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+      "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/picomatch",
+      "version": "4.0.7",
+      "source": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.7.tgz",
+      "integrity": "sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/postcss",
+      "version": "8.5.28",
+      "source": "https://registry.npmjs.org/postcss/-/postcss-8.5.28.tgz",
+      "integrity": "sha512-RRuzqDtt5Y9h3quz5hWhK+TPnsmVs6WwSU6LkJMeY4HstUEDuYTG8UJSdawMRzmzAtV+KEoG8N3Qg2qLy5vM/A==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/react",
+      "version": "19.2.8",
+      "source": "https://registry.npmjs.org/react/-/react-19.2.8.tgz",
+      "integrity": "sha512-PWaYA1L/q9u2u7xYQi+Y3L3Yfnie7XyLeaJICV1MGD6LprsBxcAqGjYyr0eY3p+QdsA+x/Irkt4Qif8D63+Sbw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/react-dom",
+      "version": "19.2.8",
+      "source": "https://registry.npmjs.org/react-dom/-/react-dom-19.2.8.tgz",
+      "integrity": "sha512-rVprimfGBG3DR+Tq0IQG2DT5PxKth1WIGDmj5yPmlzr4YBe7uyE+Du4oVqTDXZSHGGGXRtTJEGSSePyQCMBglQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/rolldown",
+      "version": "1.2.7",
+      "source": "https://registry.npmjs.org/rolldown/-/rolldown-1.2.7.tgz",
+      "integrity": "sha512-g0EtLvBjTUB7jhyV0S/TCup3v/XSVl45vUIGbOGU4QPiyjTenCe4mKuFvW9fEgYmS2Fo42AUssRmNuMziXdrig==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/scheduler",
+      "version": "0.27.0",
+      "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.27.0.tgz",
+      "integrity": "sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/source-map-js",
+      "version": "1.2.1",
+      "source": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz",
+      "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/tailwindcss",
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.3.3.tgz",
+      "integrity": "sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/tapable",
+      "version": "2.3.3",
+      "source": "https://registry.npmjs.org/tapable/-/tapable-2.3.3.tgz",
+      "integrity": "sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/tinyglobby",
+      "version": "0.2.17",
+      "source": "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.17.tgz",
+      "integrity": "sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/typescript",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/typescript/-/typescript-7.0.2.tgz",
+      "integrity": "sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/vite",
+      "version": "8.2.2",
+      "source": "https://registry.npmjs.org/vite/-/vite-8.2.2.tgz",
+      "integrity": "sha512-cFKLV/PRgAUlIRm5WjMjJ86jrftzpqcgH+Us+DS8mI3CDNiH30Whrz8uHL3+MOLPAgqbMBAqWdAHAphOAM+z/Q==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/vite/node_modules/lightningcss",
+      "version": "1.33.0",
+      "source": "https://registry.npmjs.org/lightningcss/-/lightningcss-1.33.0.tgz",
+      "integrity": "sha512-WkUDrojuJs0xkgGf2udWxa3yGBRxPtxUkB79i6aCZLRgc7PM8fZe9TosfPDcvEpQZbuFASnHYmRLBLUbmLOIIA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/vite/node_modules/lightningcss-android-arm64",
+      "version": "1.33.0",
+      "source": "https://registry.npmjs.org/lightningcss-android-arm64/-/lightningcss-android-arm64-1.33.0.tgz",
+      "integrity": "sha512-gEpRTalKdosp4Bb8qWtc2iOgE5SeIHlpS1up9bFq2wAyYhl1UdTObYiHe98zEM9SQvSoqQZ1IQD0JNpg3Ml5pg==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/vite/node_modules/lightningcss-darwin-arm64",
+      "version": "1.33.0",
+      "source": "https://registry.npmjs.org/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.33.0.tgz",
+      "integrity": "sha512-Sciaz8eenNTKn9b3t7+xr0ipTp9YxKQY4npwQ3mrRuL0BAVHBLyZxofhaKBAVtzmtRZ/zTyo0/to4B1uWG/Djg==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/vite/node_modules/lightningcss-darwin-x64",
+      "version": "1.33.0",
+      "source": "https://registry.npmjs.org/lightningcss-darwin-x64/-/lightningcss-darwin-x64-1.33.0.tgz",
+      "integrity": "sha512-Z5UPAxzrjlWNNyGy6i65cJzzvgJ5D3T6wMvs+gWpY9d7qRhANrxqAp6LhxIgZhWEw18RfJTGcRxjuLIBr+m8XQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/vite/node_modules/lightningcss-freebsd-x64",
+      "version": "1.33.0",
+      "source": "https://registry.npmjs.org/lightningcss-freebsd-x64/-/lightningcss-freebsd-x64-1.33.0.tgz",
+      "integrity": "sha512-QQM/Ti/hQajJwCY+RiWuCZ9sdtI/XQk7nDK5vC8kkdwixezOlDgvDx7+RT+QjK6FcFT4MpsuoBnHIo/O3StRRg==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/vite/node_modules/lightningcss-linux-arm-gnueabihf",
+      "version": "1.33.0",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf/-/lightningcss-linux-arm-gnueabihf-1.33.0.tgz",
+      "integrity": "sha512-N7FVBe6iS24MlM6R/4RBTxGhQheZGs7tiQ9U32UtF75NzP5Q7xWPRqLBCKxlRQRk3rY1jCIPLzx7WzOhuUIRLQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/vite/node_modules/lightningcss-linux-arm64-gnu",
+      "version": "1.33.0",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm64-gnu/-/lightningcss-linux-arm64-gnu-1.33.0.tgz",
+      "integrity": "sha512-j2v/itmy4HlNxlc6voKXYgBqNi0Ng2LShg4z7GufpEgs05P+2suBVyi9I6YHq5uoVFx9ETin3eCEhLVyXGQnKg==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/vite/node_modules/lightningcss-linux-arm64-musl",
+      "version": "1.33.0",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm64-musl/-/lightningcss-linux-arm64-musl-1.33.0.tgz",
+      "integrity": "sha512-yiO5ROMuYQgXbC60yjZU5CYSFZGKXL0HFATXt9mHJn1+zW55oCtMI9NfcVhYLMFDL7gV7oBPon/EmMMGg2OvtQ==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/vite/node_modules/lightningcss-linux-x64-gnu",
+      "version": "1.33.0",
+      "source": "https://registry.npmjs.org/lightningcss-linux-x64-gnu/-/lightningcss-linux-x64-gnu-1.33.0.tgz",
+      "integrity": "sha512-ar+Ju7LmcN0Jo4FpL4hpFybwNG9/3A/Br5KW2n2jyODg3MEZXaDYADdemoNS+BDNfMgKvylJLj4S5tyRActuAg==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/vite/node_modules/lightningcss-linux-x64-musl",
+      "version": "1.33.0",
+      "source": "https://registry.npmjs.org/lightningcss-linux-x64-musl/-/lightningcss-linux-x64-musl-1.33.0.tgz",
+      "integrity": "sha512-RYiYbkokw0trfKqqzfF55lginwEPrD3OJDfTuJzFs1MK6iFnDenaz1fqLLtX4ITG3OktJQXOeTaw1awrBAlZPw==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/vite/node_modules/lightningcss-win32-arm64-msvc",
+      "version": "1.33.0",
+      "source": "https://registry.npmjs.org/lightningcss-win32-arm64-msvc/-/lightningcss-win32-arm64-msvc-1.33.0.tgz",
+      "integrity": "sha512-1K+MPfLSFVpphzpdbfkhlWk6wBrTObBzS2T6db10PNOZgR9GoVsAWzwNyuhUYYbTp23j+4RrncfujZ4uAzXvwA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/vite/node_modules/lightningcss-win32-x64-msvc",
+      "version": "1.33.0",
+      "source": "https://registry.npmjs.org/lightningcss-win32-x64-msvc/-/lightningcss-win32-x64-msvc-1.33.0.tgz",
+      "integrity": "sha512-OlEICDx/Xl0FqSp4bry8zFnCvGpig3Gl4gCquvYwHuqJKEC1+n9NgDniFvqHGmMv1ZkqDJrDqKKSykTDX+ehuA==",
+      "install_script": false
+    },
+    {
+      "package": "node_modules/zustand",
+      "version": "5.0.15",
+      "source": "https://registry.npmjs.org/zustand/-/zustand-5.0.15.tgz",
+      "integrity": "sha512-MpSEjRiBkA9crSYeOUH32rJC7SVqAbm0Fqcqge/bUi2PPoLcBWKOsG+C8mevmpr8TwXHBVkChbbJiyvkE+i/3A==",
+      "install_script": false
+    }
+  ],
+  "rust_sources": [
+    "registry+https://github.com/rust-lang/crates.io-index"
+  ]
+}
