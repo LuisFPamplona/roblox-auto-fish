@@ -6,7 +6,10 @@ use windows::Win32::Graphics::Gdi::ClientToScreen;
 use windows::Win32::System::Threading::{
     OpenProcess, QueryFullProcessImageNameW, PROCESS_NAME_WIN32, PROCESS_QUERY_LIMITED_INFORMATION,
 };
-use windows::Win32::UI::HiDpi::GetDpiForWindow;
+use windows::Win32::UI::HiDpi::{
+    GetDpiForWindow, SetThreadDpiAwarenessContext, DPI_AWARENESS_CONTEXT,
+    DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2,
+};
 use windows::Win32::UI::WindowsAndMessaging::{
     FindWindowW, GetAncestor, GetClientRect, GetForegroundWindow, GetWindowThreadProcessId,
     IsIconic, IsWindow, IsWindowVisible, WindowFromPoint, GA_ROOT,
@@ -15,6 +18,21 @@ use windows::Win32::UI::WindowsAndMessaging::{
 pub struct Win32Window {
     class: Vec<u16>,
     title: Vec<u16>,
+}
+struct PhysicalCoordinates(DPI_AWARENESS_CONTEXT);
+impl PhysicalCoordinates {
+    fn enter() -> Self {
+        Self(unsafe { SetThreadDpiAwarenessContext(DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2) })
+    }
+}
+impl Drop for PhysicalCoordinates {
+    fn drop(&mut self) {
+        if !self.0 .0.is_null() {
+            unsafe {
+                SetThreadDpiAwarenessContext(self.0);
+            }
+        }
+    }
 }
 fn wide(s: &str) -> Vec<u16> {
     s.encode_utf16().chain(std::iter::once(0)).collect()
@@ -77,6 +95,8 @@ impl GameWindow for Win32Window {
             .is_some_and(|h| unsafe { GetForegroundWindow() == h })
     }
     fn find(&self) -> Option<WindowInfo> {
+        // WGC textures and DWM bounds are physical pixels, including at 125/150% DPI.
+        let _coordinates = PhysicalCoordinates::enter();
         let h = self.hwnd()?;
         unsafe {
             if !IsWindowVisible(h).as_bool() || IsIconic(h).as_bool() {

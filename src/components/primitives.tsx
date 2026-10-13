@@ -69,7 +69,7 @@ export function Row({
 
 export function Section({ title, children, action }: { title: string; children: ReactNode; action?: ReactNode }) {
   return (
-    <div className="mb-6 first:pt-1">
+    <div className="ui-section mb-5 first:pt-1">
       <div className="flex items-center justify-between px-4 pb-2 pt-3">
         <div className="text-[11px] uppercase tracking-[0.12em] text-fg-mute font-semibold">{title}</div>
         {action}
@@ -171,7 +171,7 @@ export function Button({
   const sizes = size === "sm" ? "h-8 px-3 text-[12px]" : "h-9 px-3.5 text-[13px]";
   const kinds = {
     default: "bg-white/[0.06] hover:bg-white/[0.1] border border-line-strong hover:border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_1px_2px_rgba(0,0,0,0.3)]",
-    primary: "bg-accent text-white hover:brightness-110 shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_4px_14px_rgba(79,140,255,0.35)]",
+    primary: "bg-accent text-white hover:brightness-110 shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_4px_14px_rgba(28,125,113,0.22)]",
     danger: "bg-bad-soft text-bad hover:bg-bad/25 border border-bad/30",
     ghost: "hover:bg-white/[0.06] text-fg-dim hover:text-fg",
   }[kind];

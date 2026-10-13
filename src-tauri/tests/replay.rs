@@ -45,10 +45,18 @@ fn replay_dumped_frames() {
                 failed.push(name);
             }
         } else if name.contains("end") {
-            assert!(vision::find_bar(&frame, &p).is_none(), "{name}: bar still detected after reel end");
+            assert!(
+                vision::find_bar(&frame, &p).is_none(),
+                "{name}: bar still detected after reel end"
+            );
         }
     }
-    eprintln!("replayed {} frames, {} expected-bar frames, {} failed", files.len(), seen, failed.len());
+    eprintln!(
+        "replayed {} frames, {} expected-bar frames, {} failed",
+        files.len(),
+        seen,
+        failed.len()
+    );
     let allowed = (seen as f32 * 0.02).ceil() as usize;
     assert!(failed.len() <= allowed, "detection failed on: {failed:?}");
 }

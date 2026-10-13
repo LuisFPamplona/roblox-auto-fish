@@ -10,3 +10,13 @@ Thumbs.db
 legacy/
 *.key
 *.key.pub
+
+# Local validation evidence; never publish machine/user diagnostics.
+docs/windows-*.txt
+docs/windows-*.json
+docs/capture-*.txt
+docs/redesign-*.txt
+docs/source-manifest.json
+docs/cargo-check.txt
+docs/frontend-build.txt
+docs/security-tests.txt

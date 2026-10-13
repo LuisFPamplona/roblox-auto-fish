@@ -262,7 +262,7 @@ mod tests {
                 physics,
                 fish_half: 0.125,
                 smooth: false,
-                queue: std::iter::repeat(false).take(latency_frames).collect(),
+                queue: std::iter::repeat_n(false, latency_frames).collect(),
             }
         }
 
@@ -284,7 +284,7 @@ mod tests {
             if self.smooth {
                 self.marker_v = 0.3 * (t * 2.1).sin();
             } else if (t / 1.5).fract() < dt / 1.5 {
-                self.marker_v = if ((t / 1.5) as usize) % 2 == 0 {
+                self.marker_v = if ((t / 1.5) as usize).is_multiple_of(2) {
                     0.25
                 } else {
                     -0.25

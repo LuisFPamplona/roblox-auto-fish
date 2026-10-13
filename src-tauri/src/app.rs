@@ -105,9 +105,25 @@ fn spawn_event_forwarder(app: AppHandle, rx: Receiver<BotEvent>) {
         .name("event-forwarder".into())
         .spawn(move || {
             for ev in rx.iter() {
-                let _ = app.emit(ev.channel(), &ev);
+                // These channels use nullable payloads in the frontend. An
+                // internally tagged enum cannot serialize a None newtype.
+                let emitted = match &ev {
+                    BotEvent::Reading(value) => app.emit(ev.channel(), value),
+                    BotEvent::Roblox(value) => app.emit(ev.channel(), value),
+                    _ => app.emit(ev.channel(), &ev),
+                };
+                if let Err(error) = emitted {
+                    tracing::warn!("event delivery failed on {}: {error}", ev.channel());
+                }
                 match &ev {
-                    BotEvent::State { state, .. } => tray::update(&app, *state),
+                    BotEvent::State { state, .. } => {
+                        if state.is_active() && app.state::<AppState>().roblox.read().is_some() {
+                            // Controls must not cover the pixels used by GDI tracking.
+                            windows::hide_panel(&app);
+                            windows::hide_guide(&app);
+                        }
+                        tray::update(&app, *state);
+                    }
                     BotEvent::Roblox(info) => windows::on_roblox_changed(&app, *info),
                     _ => {}
                 }

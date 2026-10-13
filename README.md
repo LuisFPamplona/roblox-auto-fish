@@ -1,8 +1,10 @@
 # AutoFish Local
 
+[Pré-release Windows 0.1.2-alpha](https://github.com/LuisFPamplona/roblox-auto-fish/releases/tag/v0.1.2-alpha) · [Notas e limitações](docs/PRE_RELEASE_0.1.2.md).
+
 Reconstrução independente do GPO Fishing Macro (Rust + Tauri + React/TypeScript). Licença MIT original preservada em LICENSE. Identificador próprio, dados próprios e atualização automática removida.
 
-**Estado: código reconstruído; frontend compilado e verificado. Backend ainda precisa compilar e passar testes no Windows com MSVC. Não há instalador validado nem teste real no Roblox.** Leia docs/AUDITORIA.md para achados, linhas do fonte original, privacidade e limitações.
+**Estado: versão experimental Windows x64 0.1.2-alpha com identidade visual própria, sem a imagem da logo original.** A correção de captura da versão 0.1.1 foi preservada. Consulte [docs/REDESIGN.md](docs/REDESIGN.md) para a interface e [docs/CAPTURE_FIX.md](docs/CAPTURE_FIX.md) para a validação no GPO. WINDOWS_VALIDATION_REPORT.md registra a primeira versão; SECURITY_AUDIT.md contém a revisão de segurança e docs/AUDITORIA.md a auditoria histórica do ZIP original.
 
 ## Compilar no Windows
 
@@ -22,12 +24,14 @@ npm run build
 npm run test:security
 cargo check --manifest-path src-tauri/Cargo.toml --locked
 cargo test --manifest-path src-tauri/Cargo.toml --locked
-npm run app:build -- -- --locked
+cargo clippy --manifest-path src-tauri/Cargo.toml --locked --all-targets -- -D warnings
+cargo fmt --manifest-path src-tauri/Cargo.toml --all -- --check
+npm run app:build -- --no-bundle -- --locked
 ```
 
-MakeItExe.bat faz essas verificações (incluindo testes de política da distribuição) e interrompe no primeiro erro. O instalador NSIS, se o build terminar, fica em src-tauri/target/release/bundle/nsis. Não cria chaves, não usa atualizador, não desativa proteção e não precisa executar como administrador. O build exige acesso aos registros oficiais e às ferramentas do bundler Tauri. Lockfiles fixam dependências, mas não asseguram instaladores byte a byte idênticos entre SDKs/toolchains; registre as versões usadas.
+MakeItExe.bat executa essas verificações e interrompe no primeiro erro. O executável portátil fica em src-tauri/target/release/gpo-autofish.exe, ou em CARGO_TARGET_DIR/release quando essa variável estiver definida. Não instala o aplicativo, cria chaves ou usa atualizador. A instalação dos Build Tools exige autorização e pode precisar de administrador; executar o AutoFish não solicita elevação. Veja BUILD.md para pré-requisitos e reprodução. Lockfiles não asseguram binários byte a byte idênticos entre toolchains/SDKs.
 
-Não ignore uma falha de Cargo ou de teste. Os testes Rust de segurança precisam ser executados para validar os guards; os testes Node não os substituem. Se a captura GDI retornar preto, isso requer investigação de compatibilidade no Windows; não reative captura de monitor completo para contornar.
+Não ignore uma falha de Cargo ou de teste. Os testes Rust de segurança precisam ser executados para validar os guards; os testes Node não os substituem. A captura usa Windows Graphics Capture ligado à janela validada do Roblox. Falhas persistentes interrompem o macro e aparecem nos previews; não existe fallback para captura de monitor.
 
 ## Uso
 
@@ -40,3 +44,9 @@ Capturas ficam na memória e não são enviadas. Webhook vem desligado; informe 
 Dados locais: %APPDATA%/autofish-local. Sem atualização automática: instale manualmente somente uma versão própria verificada. Nenhuma DLL injetada, alteração da memória do jogo, contorno de anticheat ou alteração do Defender faz parte deste projeto.
 
 A auto-detecção oculta temporariamente apenas os controles do macro para examinar a área cliente do Roblox. O bot permanece pausado e os controles são restaurados ao terminar. O HUD padrão foi deslocado para baixo para deixar a área OCR livre.
+
+O pacote de teste contém somente executável, licença, instruções e hash. Não inclui settings.json, webhooks, imagens capturadas, runtimes de auditoria ou dependências de desenvolvimento. WebView2 deve estar instalado. A distribuição portátil teve OCR sintético funcionando nesta máquina; a Microsoft documenta suporte desktop de Windows.Media.Ocr para apps com identidade de pacote/MSIX. Essa condição precisa ser resolvida antes de uma release pública.
+
+O WebView2 gerou conexões HTTPS próprias durante o teste com webhooks desligados; seus payloads não foram analisados. Não considerar esta versão estritamente offline. Veja SECURITY_AUDIT.md para os destinos observados e a pendência de revisão do runtime antes de release pública.
+
+Continuam pendentes: matriz de fullscreen/DPI/resoluções/GPUs, OCR dentro do GPO, pesca prolongada e compra/armazenamento. Os testes sintéticos não substituem esses cenários. O resultado da validação atual de captura e minigame está em docs/CAPTURE_FIX.md.

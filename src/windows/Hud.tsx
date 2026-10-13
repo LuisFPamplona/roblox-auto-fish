@@ -57,7 +57,7 @@ export default function Hud() {
       className={cx("h-full w-full flex items-center px-1.5 transition-opacity duration-300", dim && "opacity-40 hover:opacity-100")}
       onPointerDown={startDrag}
     >
-      <div className="glass rounded-full h-[44px] w-full flex items-center gap-2 pl-3 pr-1.5">
+      <div className="glass hud-shell h-[44px] w-full flex items-center gap-2 pl-3 pr-1.5">
         <StateBadge state={state} size={28} icon={14} className="-ml-1" />
         <div className="min-w-0 flex-1 leading-tight">
           <div className="text-[12px] font-semibold truncate">{flash ? flash.text : STATE_LABEL[state]}</div>

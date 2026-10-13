@@ -33,6 +33,7 @@ pub trait GameWindow: Send + Sync {
 
 pub trait Capture: Send + Sync {
     fn grab(&self, rect: PxRect) -> Result<Frame>;
+    fn release(&self) {}
 }
 
 pub trait Input: Send + Sync {
@@ -65,7 +66,7 @@ pub fn build() -> Platform {
     let window: Arc<dyn GameWindow> = Arc::new(windows::window::Win32Window::new("Roblox"));
     Platform {
         window: window.clone(),
-        capture: Arc::new(windows::capture::GdiCapture::new()),
+        capture: Arc::new(windows::wgc::WindowCapture::new()),
         input: Arc::new(guarded::GuardedInput::new(
             window,
             Arc::new(windows::input::SendInputBackend::new()),

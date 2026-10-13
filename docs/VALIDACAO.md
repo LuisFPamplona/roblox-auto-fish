@@ -1,5 +1,7 @@
 # Validação — 11/10/2026
 
+Este arquivo registra a etapa histórica de reconstrução, anterior à instalação do MSVC. Os resultados atuais de compilação, OCR nativo e execução Windows estão em `../WINDOWS_VALIDATION_REPORT.md`; não interpretar as falhas de ambiente abaixo como o estado atual.
+
 ## Executado neste ambiente
 
 - ZIP inventariado antes de alterar/executar o projeto; hashes e referências originais em original-inventory.json.

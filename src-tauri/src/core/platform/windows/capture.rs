@@ -161,14 +161,14 @@ impl Capture for GdiCapture {
             let _ = DeleteDC(mem);
             ReleaseDC(Some(target), screen);
 
-            if !ok || lines != h as u32 {
+            if !ok || lines != h {
                 return Err(PlatformError::Capture("BitBlt/GetDIBits".into()));
             }
             let (after, after_client) = capture_target(rect)?;
             if after != target || after_client != client {
                 return Err(PlatformError::Capture("Roblox moved during capture".into()));
             }
-            for px in buf.chunks_exact_mut(4) {
+            for px in buf.as_chunks_mut::<4>().0 {
                 px.swap(0, 2);
                 px[3] = 255;
             }

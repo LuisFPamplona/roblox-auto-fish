@@ -12,22 +12,29 @@ export function LiveAreas() {
   const reading = useStore((s) => s.reading);
   const [bar, setBar] = useState<RegionPreview | null>(null);
   const [drop, setDrop] = useState<RegionPreview | null>(null);
+  const [barError, setBarError] = useState<string | null>(null);
+  const [dropError, setDropError] = useState<string | null>(null);
   const active = isActive(state);
   const regions = settings?.regions;
   const hk = settings?.hotkeys;
 
   useEffect(() => {
-    if (!roblox || !regions) return;
+    if (!roblox || !regions) {
+      setBar(null); setDrop(null); setBarError(null); setDropError(null);
+      return;
+    }
     let alive = true;
+    let pending = false;
     const tick = async () => {
-      try {
-        const [b, d] = await Promise.all([api.regionPreview(regions.bar, 200), api.regionPreview(regions.drop, 320)]);
-        if (alive) {
-          setBar(b);
-          setDrop(d);
-        }
-      } catch {
-        if (alive) { setBar(null); setDrop(null); }
+      if (pending) return;
+      pending = true;
+      const [b, d] = await Promise.allSettled([api.regionPreview(regions.bar, 200), api.regionPreview(regions.drop, 320)]);
+      pending = false;
+      if (alive) {
+        setBar(b.status === "fulfilled" ? b.value : null);
+        setBarError(b.status === "rejected" ? String(b.reason) : null);
+        setDrop(d.status === "fulfilled" ? d.value : null);
+        setDropError(d.status === "rejected" ? String(d.reason) : null);
       }
     };
     tick();
@@ -48,6 +55,8 @@ export function LiveAreas() {
           label="Fishing bar"
           color="#4f8cff"
           preview={bar}
+          error={barError}
+          connected={!!roblox}
           fallbackRatio={0.5}
           status={reading ? (reading.hold ? "reeling · hold" : "reeling · release") : score >= 0.6 ? "bar visible" : active ? "waiting" : "idle"}
           tone={barTone}
@@ -70,7 +79,7 @@ export function LiveAreas() {
             ) : null
           }
         />
-        <Tile label="Drop message" color="#22c55e" preview={drop} fallbackRatio={3} status={drop ? "watching" : "no capture"} tone={drop ? "accent" : "mute"} />
+        <Tile label="Drop message" color="#22c55e" preview={drop} error={dropError} connected={!!roblox} fallbackRatio={3} status={drop ? "watching" : "no capture"} tone={drop ? "accent" : "mute"} />
       </div>
       <div className="flex items-center gap-x-3 gap-y-1.5 flex-wrap text-[11px] text-fg-dim">
         <Button size="sm" onClick={() => api.overlayOpenRegions()} disabled={!roblox} icon={<PencilRuler size={13} />}>
@@ -105,6 +114,8 @@ function Tile({
   status,
   tone,
   overlay,
+  error,
+  connected,
 }: {
   label: string;
   color: string;
@@ -113,21 +124,23 @@ function Tile({
   status: string;
   tone: keyof typeof PILL;
   overlay?: React.ReactNode;
+  error?: string | null;
+  connected: boolean;
 }) {
-  const ratio = preview ? preview.width / preview.height : fallbackRatio;
+  const ratio = error ? undefined : preview ? preview.width / preview.height : fallbackRatio;
   return (
     <div className="min-w-0 rounded-xl border border-line bg-bg-elev/70 overflow-hidden flex flex-col">
       <div className="flex items-center gap-2 px-2.5 py-1.5 text-[11px] min-w-0">
         <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: color, boxShadow: `0 0 6px ${color}` }} />
         <span className="font-medium truncate">{label}</span>
-        <span className={cx("ml-auto shrink-0 rounded-full px-1.5 py-px font-mono text-[10px] whitespace-nowrap", PILL[tone])}>{status}</span>
+        <span className={cx("ml-auto shrink-0 rounded-full px-1.5 py-px font-mono text-[10px] whitespace-nowrap", PILL[error ? "warn" : tone])}>{error ? "capture error" : status}</span>
       </div>
       <div className="relative h-28 border-t border-line bg-black/40">
         <div className="relative h-full max-w-full mx-auto overflow-hidden" style={{ aspectRatio: ratio }}>
           {preview ? (
             <img src={`data:image/png;base64,${preview.png_base64}`} alt="" className="block w-full h-full" style={{ imageRendering: preview.width < 200 ? "pixelated" : "auto" }} />
           ) : (
-            <div className="w-full h-full grid place-items-center text-[11px] text-fg-mute text-center px-1 leading-tight">open Roblox</div>
+            <div className="w-full h-full grid place-items-center text-[11px] text-fg-mute text-center px-1 leading-tight">{error ?? (connected ? "Waiting for capture" : "open Roblox")}</div>
           )}
           {overlay}
         </div>

@@ -204,7 +204,7 @@ fn embed(title: &str, desc: &str, color: u32, fields: Vec<Value>) -> Value {
         "description": desc,
         "color": color,
         "fields": fields,
-        "footer": { "text": "AutoFish Local v4" },
+        "footer": { "text": concat!("AutoFish Local ", env!("CARGO_PKG_VERSION")) },
         "timestamp": chrono_now(),
     })
 }

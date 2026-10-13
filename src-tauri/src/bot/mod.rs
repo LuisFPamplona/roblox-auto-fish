@@ -153,6 +153,7 @@ impl Bot {
                 }));
                 ctx.release_mouse();
                 ctx.platform.input.set_enabled(false);
+                ctx.platform.capture.release();
                 ctx.running.store(false, Ordering::SeqCst);
                 ctx.emit(BotEvent::Reading(None));
                 ctx.session.lock().pause();

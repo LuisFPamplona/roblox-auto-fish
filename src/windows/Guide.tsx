@@ -4,7 +4,6 @@ import { api, on } from "../lib/ipc";
 import { useStore } from "../lib/store";
 import { Button, cx } from "../components/primitives";
 import { GUIDE_STEPS } from "../components/SetupGuide";
-import logo from "../assets/logo.png";
 
 const close = () => api.guideHide();
 
@@ -38,8 +37,7 @@ export default function Guide() {
     <div className="h-full w-full p-1.5">
       <div className="glass rounded-2xl h-full w-full flex flex-col overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
         <header className="h-11 flex items-center gap-2.5 px-4 border-b border-line drag shrink-0">
-          <img src={logo} alt="" draggable={false} className="w-6 h-6 rounded-md" />
-          <div className="font-semibold">How to set up</div>
+          <div className="font-semibold">AutoFish Local · Guia de configuração</div>
           <div className="ml-auto flex items-center gap-1 no-drag">
             {GUIDE_STEPS.map((st, n) => (
               <button

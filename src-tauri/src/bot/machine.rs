@@ -29,6 +29,24 @@ pub fn run(ctx: &Ctx, skip_setup: bool) {
     if !ensure_front(ctx) {
         return;
     }
+    // Check usable capture before setup/purchase/casting can generate inputs.
+    let mut capture_ready = false;
+    for _ in 0..5 {
+        if let Some(rect) = ctx.roblox_rect() {
+            let region = ctx.settings.read().regions.bar;
+            if grab_rect(ctx, region.to_px(&rect)).is_some() {
+                capture_ready = true;
+                break;
+            }
+        }
+        if !ctx.sleep_ms(100) {
+            return;
+        }
+    }
+    if !capture_ready {
+        stop_for_capture(ctx);
+        return;
+    }
     if !skip_setup && !actions::initial_setup(ctx) {
         return;
     }
@@ -173,12 +191,25 @@ fn grab_region(ctx: &Ctx, region: RelRect) -> Option<Frame> {
 
 fn grab_rect(ctx: &Ctx, rect: PxRect) -> Option<Frame> {
     match ctx.platform.capture.grab(rect) {
-        Ok(f) => Some(f),
+        Ok(f) => {
+            ctx.capture_recovered();
+            Some(f)
+        }
         Err(e) => {
-            ctx.log_debug(&format!("capture: {e}"));
+            ctx.capture_failed(&e.to_string());
             None
         }
     }
+}
+
+fn stop_for_capture(ctx: &Ctx) {
+    ctx.platform.input.set_enabled(false);
+    ctx.release_mouse();
+    ctx.log_error("Automation stopped: capture is unavailable. Check the regions and move covering windows, then start manually.");
+    ctx.set_state(
+        BotState::Stopped,
+        Some("Capture unavailable; review regions and start manually".into()),
+    );
 }
 
 fn fish_cycle(
@@ -192,6 +223,7 @@ fn fish_cycle(
     let mut tracking_since: Option<Instant> = None;
     let mut confirm = 0u32;
     let mut misses = 0u32;
+    let mut capture_failures = 0u32;
     let mut edge_warned = false;
     let mut bar_lock: Option<vision::Bbox> = None;
     let mut hold_watch: Option<HoldWatch> = None;
@@ -260,11 +292,18 @@ fn fish_cycle(
         };
         let (capture_rect, origin_dx) = bar_capture_rect(&client, bar_region);
         let Some(frame) = grab_rect(ctx, capture_rect) else {
+            ctx.release_mouse();
+            capture_failures += 1;
+            if capture_failures >= 5 {
+                stop_for_capture(ctx);
+                return Outcome::Stopped;
+            }
             if !ctx.sleep_ms(100) {
                 return Outcome::Stopped;
             }
             continue;
         };
+        capture_failures = 0;
         let grab_took = grab_started.elapsed();
 
         let now = Instant::now();
@@ -534,7 +573,7 @@ mod tests {
     use crate::config::Settings;
     use crate::core::platform::mock::{RecordingInput, ScriptedCapture, ScriptedOcr};
     use crate::core::platform::Platform;
-    use crate::core::types::{PxRect, Rgb, WindowInfo};
+    use crate::core::types::{MouseButton, PxRect, Rgb, WindowInfo};
     use crate::webhook::WebhookQueue;
 
     fn solid(w: usize, h: usize, paint: impl Fn(usize, usize) -> Rgb) -> Frame {
@@ -572,19 +611,17 @@ mod tests {
     fn make_ctx(
         cap: Arc<ScriptedCapture>,
         input: Arc<RecordingInput>,
-    ) -> (Arc<Ctx>, crossbeam_channel::Receiver<BotEvent>) {
+    ) -> (
+        Arc<Ctx>,
+        crossbeam_channel::Receiver<BotEvent>,
+        Arc<crate::core::platform::mock::MockWindow>,
+    ) {
         let (tx, rx) = crossbeam_channel::unbounded();
         let mut settings = Settings::default();
         settings.fishing.scan_timeout_s = 1.0;
         settings.fishing.scan_hz = 200;
         settings.fishing.track_hz = 200;
         settings.fishing.min_track_s = 0.0;
-        let platform = Platform {
-            window: Arc::new(crate::core::platform::mock::MockWindow::default()),
-            capture: cap,
-            input,
-            ocr: Arc::new(ScriptedOcr::default()),
-        };
         let roblox = Arc::new(RwLock::new(Some(WindowInfo {
             client: PxRect {
                 x: 0,
@@ -596,6 +633,14 @@ mod tests {
             visible: true,
             dpi: 96,
         })));
+        let window = Arc::new(crate::core::platform::mock::MockWindow::default());
+        *window.info.lock() = *roblox.read();
+        let platform = Platform {
+            window: window.clone(),
+            capture: cap,
+            input,
+            ocr: Arc::new(ScriptedOcr::default()),
+        };
         let store = Arc::new(crate::config::Store::new(
             std::env::temp_dir().join("gpo-autofish-test"),
         ));
@@ -608,7 +653,7 @@ mod tests {
             store,
         ));
         ctx.running.store(true, std::sync::atomic::Ordering::SeqCst);
-        (ctx, rx)
+        (ctx, rx, window)
     }
 
     #[test]
@@ -627,7 +672,7 @@ mod tests {
         for _ in 0..4 {
             cap.push(blank());
         }
-        let (ctx, _rx) = make_ctx(cap, input.clone());
+        let (ctx, _rx, _window) = make_ctx(cap, input.clone());
         let mut tracker = Tracker::default();
         let mut hash = 0;
         let mut t = Instant::now();
@@ -640,15 +685,45 @@ mod tests {
     }
 
     #[test]
+    fn unavailable_capture_stops_before_setup_or_casting() {
+        let cap = Arc::new(ScriptedCapture::default());
+        let input = Arc::new(RecordingInput::default());
+        let (ctx, _rx, _window) = make_ctx(cap, input.clone());
+        run(&ctx, false);
+        assert_eq!(ctx.state(), BotState::Stopped);
+        assert!(input.events.lock().is_empty());
+    }
+
+    #[test]
     fn cycle_times_out_without_bar() {
         let cap = Arc::new(ScriptedCapture::default());
         cap.push(blank());
         let input = Arc::new(RecordingInput::default());
-        let (ctx, _rx) = make_ctx(cap, input);
+        let (ctx, _rx, _window) = make_ctx(cap, input);
         let mut tracker = Tracker::default();
         let mut hash = 0;
         let mut t = Instant::now();
         let out = fish_cycle(&ctx, &mut tracker, &mut hash, &mut t);
         assert!(matches!(out, Outcome::Timeout));
+    }
+
+    #[test]
+    fn cycle_loses_focus_even_when_cached_window_is_still_active() {
+        let cap = Arc::new(ScriptedCapture::default());
+        cap.push(bar_frame(40));
+        let input = Arc::new(RecordingInput::default());
+        let (ctx, _rx, window) = make_ctx(cap, input.clone());
+        ctx.hold_mouse(true);
+        window.info.lock().as_mut().unwrap().is_foreground = false;
+        let out = fish_cycle(&ctx, &mut Tracker::default(), &mut 0, &mut Instant::now());
+        assert!(matches!(out, Outcome::Lost));
+        assert!(!ctx.mouse_held.load(std::sync::atomic::Ordering::SeqCst));
+        assert_eq!(
+            input.events.lock().last(),
+            Some(&crate::core::platform::mock::InputEvent::Button(
+                MouseButton::Left,
+                false
+            ))
+        );
     }
 }

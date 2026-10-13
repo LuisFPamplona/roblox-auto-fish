@@ -79,7 +79,9 @@ fn row_counts(f: &Frame, color: Rgb, tol: u8) -> Vec<u32> {
     f.rgba
         .chunks_exact(f.w * 4)
         .map(|row| {
-            row.chunks_exact(4)
+            row.as_chunks::<4>()
+                .0
+                .iter()
                 .filter(|px| color.within(px[0], px[1], px[2], tol))
                 .count() as u32
         })
@@ -89,7 +91,7 @@ fn row_counts(f: &Frame, color: Rgb, tol: u8) -> Vec<u32> {
 fn col_counts(f: &Frame, color: Rgb, tol: u8) -> Vec<u32> {
     let mut cols = vec![0u32; f.w];
     for row in f.rgba.chunks_exact(f.w * 4) {
-        for (c, px) in cols.iter_mut().zip(row.chunks_exact(4)) {
+        for (c, px) in cols.iter_mut().zip(row.as_chunks::<4>().0.iter()) {
             if color.within(px[0], px[1], px[2], tol) {
                 *c += 1;
             }
@@ -105,7 +107,7 @@ fn largest_run(counts: &[u32], min: u32, max_gap: usize) -> Option<Span> {
     let mut last_hit = 0usize;
     let consider = |start: usize, end: usize, best: &mut Option<Span>| {
         let span = Span { start, end };
-        if best.map_or(true, |b| span.len() > b.len()) {
+        if best.is_none_or(|b| span.len() > b.len()) {
             *best = Some(span);
         }
     };

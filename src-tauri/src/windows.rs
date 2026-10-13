@@ -14,6 +14,7 @@ const GUIDE_W: f64 = 680.0;
 const GUIDE_H: f64 = 600.0;
 
 static GUIDE_OPEN: std::sync::atomic::AtomicBool = std::sync::atomic::AtomicBool::new(false);
+static PANEL_OPEN: std::sync::atomic::AtomicBool = std::sync::atomic::AtomicBool::new(true);
 static CAPTURE_UI_HIDDEN: std::sync::atomic::AtomicBool = std::sync::atomic::AtomicBool::new(false);
 
 pub fn suspend_for_capture(app: &AppHandle) -> Result<Vec<String>, String> {
@@ -111,7 +112,9 @@ pub fn on_roblox_changed(app: &AppHandle, info: Option<WindowInfo>) {
             if overlay_visible(app) {
                 hide_overlay(app);
             }
-            if let Some(p) = panel(app) {
+            if let Some(p) =
+                panel(app).filter(|_| PANEL_OPEN.load(std::sync::atomic::Ordering::SeqCst))
+            {
                 if !p.is_visible().unwrap_or(false) && !p.is_minimized().unwrap_or(false) {
                     show_noactivate(&p);
                 }
@@ -134,7 +137,9 @@ pub fn on_roblox_changed(app: &AppHandle, info: Option<WindowInfo>) {
         }
         Some(w) => {
             position_hud(app, w.client);
-            position_panel(app, w.client);
+            if PANEL_OPEN.load(std::sync::atomic::Ordering::SeqCst) {
+                position_panel(app, w.client);
+            }
             if GUIDE_OPEN.load(std::sync::atomic::Ordering::SeqCst) {
                 position_guide(app, w.client);
             }
@@ -351,6 +356,7 @@ pub fn emit_panel_visible(app: &AppHandle) {
 }
 
 pub fn hide_panel(app: &AppHandle) {
+    PANEL_OPEN.store(false, std::sync::atomic::Ordering::SeqCst);
     hide(panel(app));
     emit_panel_visible(app);
 }
@@ -364,6 +370,7 @@ pub fn toggle_panel(app: &AppHandle) {
 }
 
 pub fn show_panel(app: &AppHandle) {
+    PANEL_OPEN.store(true, std::sync::atomic::Ordering::SeqCst);
     let Some(p) = panel(app) else { return };
     let _ = p.unminimize();
     let info = *app.state::<AppState>().roblox.read();

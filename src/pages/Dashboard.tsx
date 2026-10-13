@@ -31,8 +31,8 @@ export default function Dashboard() {
   const hk = settings?.hotkeys.toggle ?? "F1";
 
   return (
-    <div className="pb-4">
-      <div className="px-4 pt-4 pb-3 flex items-center gap-3">
+    <div className="pb-4 dashboard">
+      <div className="session-card flex items-center gap-3">
         <StateBadge state={state} />
         <div className="flex-1 min-w-0">
           <div className="text-[15px] font-semibold leading-tight">{STATE_LABEL[state]}</div>
@@ -42,37 +42,39 @@ export default function Dashboard() {
         </div>
         <div className="flex gap-1.5">
           <Button kind={active ? "default" : "primary"} onClick={() => api.botToggle()} icon={active ? <Pause size={14} /> : <Play size={14} />}>
-            {active ? "Pause" : state === "paused" ? "Resume" : "Start"}
+            {active ? "Pausar" : state === "paused" ? "Retomar" : "Iniciar"}
           </Button>
           {(active || state === "paused") && <Button kind="danger" onClick={() => api.botStop()} icon={<Square size={13} />} />}
         </div>
       </div>
       <div className="px-4 pb-3 text-[11px] text-fg-mute">
-        Press <span className="font-mono text-fg-dim">{hk}</span> anywhere to start or pause.
+        Use <span className="font-mono text-fg-dim">{hk}</span> para iniciar ou pausar.
       </div>
 
-      <Section title="All time">
-        <Stat label="Fish caught" value={total.fish} sub={sessionNote(stats.fish)} />
-        <Stat label="Failed reels" value={total.failed} sub={sessionNote(stats.failed)} />
+      <Section title="Seu histórico">
+        <div className="stats-grid">
+        <Stat label="Peixes registrados" value={total.fish} sub={sessionNote(stats.fish)} />
+        <Stat label="Tentativas falhas" value={total.failed} sub={sessionNote(stats.failed)} />
         <Stat
-          label="Devil fruits"
+          label="Frutas"
           value={total.fruits}
           sub={sessionNote(stats.fruits)}
           extra={total.last_fruit ? <Pill tone="fruit">{total.last_fruit.slice(0, 40)}</Pill> : undefined}
         />
-        <Stat label="Bait bought" value={total.bait_purchased} sub={sessionNote(stats.bait_purchased)} />
-        <Stat label="Time fishing" value={fmtRuntime(totalRuntime)} sub={active || state === "paused" ? `this run ${fmtRuntime(runtime)}` : undefined} />
-        <Stat label="Sessions" value={total.sessions} />
-        <Stat label="Bite rate" value={`${Math.round(stats.success_rate * 100)}%`} extra={<Bar pct={stats.success_rate} />} />
-        {stats.restarts > 0 && <Stat label="Recoveries" value={stats.restarts} />}
-        {total.last_spawn && <Stat label="Last spawn" value={total.last_spawn} />}
+        <Stat label="Iscas compradas" value={total.bait_purchased} sub={sessionNote(stats.bait_purchased)} />
+        <Stat label="Tempo de pesca" value={fmtRuntime(totalRuntime)} sub={active || state === "paused" ? `this run ${fmtRuntime(runtime)}` : undefined} />
+        <Stat label="Sessões" value={total.sessions} />
+        <Stat label="Taxa de mordidas" value={`${Math.round(stats.success_rate * 100)}%`} extra={<Bar pct={stats.success_rate} />} />
+        {stats.restarts > 0 && <Stat label="Recuperações" value={stats.restarts} />}
+        {total.last_spawn && <Stat label="Última aparição" value={total.last_spawn} />}
+        </div>
       </Section>
 
-      <Section title="Live">
+      <Section title="Captura ao vivo">
         <LiveAreas />
       </Section>
 
-      <Section title="Activity">
+      <Section title="Atividade">
         <LogList height={220} />
       </Section>
     </div>
@@ -81,12 +83,12 @@ export default function Dashboard() {
 
 function Stat({ label, value, extra, sub }: { label: string; value: React.ReactNode; extra?: React.ReactNode; sub?: string }) {
   return (
-    <div className="flex items-center px-4 h-11 border-b border-line">
+    <div className="stat-card">
       <div className="text-fg-dim">
         {label}
         {sub && <span className="ml-2 text-[11px] text-fg-mute font-mono">{sub}</span>}
       </div>
-      <div className="ml-auto flex items-center gap-3">
+      <div className="stat-value flex items-center gap-2 flex-wrap">
         {extra}
         <div className="font-mono tabular-nums text-[14px] font-medium">{value}</div>
       </div>

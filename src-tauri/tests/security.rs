@@ -42,8 +42,10 @@ fn points_on_normalized_edge_stay_inside_client_pixels() {
 
 #[test]
 fn emergency_binding_cannot_be_removed_or_shadowed() {
-    let mut keys = Hotkeys::default();
-    keys.toggle = "Ctrl+Alt+F12".into();
+    let mut keys = Hotkeys {
+        toggle: "Ctrl+Alt+F12".into(),
+        ..Hotkeys::default()
+    };
     assert!(hotkeys::validate(&keys).is_err());
     keys = Hotkeys::default();
     keys.quit = keys.toggle.clone();

@@ -1,5 +1,7 @@
 # Auditoria e reconstrução — AutoFish Local
 
+Registro histórico da primeira reconstrução do ZIP. A etapa posterior de MSVC, compilação e execução Windows está documentada em `../SECURITY_AUDIT.md` e `../WINDOWS_VALIDATION_REPORT.md`. As limitações de build descritas aqui foram investigadas posteriormente; as evidências originais foram preservadas.
+
 Data: 11/10/2026. Escopo: o ZIP fornecido, não a branch remota atual nem um instalador distribuído.
 SHA-256 do ZIP original: `2815b68cafc96d0bf1bbc79c269af8e46e09c2920f6e41a556b537474d52a4d6`.
 Inventário: 123 arquivos, 66 arquivos textuais, incluindo manifestos, lockfiles, scripts, todos os módulos Rust/TS e configurações. O inventário completo, hashes individuais, referências de rede, scripts npm transitivos e trechos de evidência estão em `original-inventory.json`.

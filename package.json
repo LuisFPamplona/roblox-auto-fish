@@ -1,7 +1,7 @@
 {
   "name": "autofish-local",
   "private": true,
-  "version": "4.0.1",
+  "version": "0.1.2-alpha",
   "type": "module",
   "scripts": {
     "dev": "vite",

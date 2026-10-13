@@ -47,6 +47,12 @@ impl Session {
         }
     }
 
+    pub fn idle(base: Lifetime) -> Self {
+        let mut session = Self::with_base(base);
+        session.paused_at = Some(session.started);
+        session
+    }
+
     pub fn lifetime(&self) -> Lifetime {
         Lifetime {
             fish: self.base.fish + self.fish,
@@ -150,6 +156,22 @@ impl Default for Session {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn idle_time_is_not_carried_into_first_started_session() {
+        let mut session = Session::idle(Lifetime {
+            runtime_s: 120,
+            ..Lifetime::default()
+        });
+        session.started -= Duration::from_secs(30);
+        session.paused_at = Some(session.started);
+        assert_eq!(session.runtime(), Duration::ZERO);
+        assert_eq!(session.lifetime().runtime_s, 120);
+        let next = session.next_session();
+        assert_eq!(next.base.runtime_s, 120);
+        assert_eq!(next.base.sessions, 1);
+        assert!(next.paused_at.is_none());
+    }
 
     #[test]
     fn adaptive_timeout_scales() {

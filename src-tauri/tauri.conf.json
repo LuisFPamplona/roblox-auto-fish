@@ -1,7 +1,7 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "AutoFish Local",
-  "version": "4.0.1",
+  "version": "0.1.2-alpha",
   "identifier": "local.autofish.desktop",
   "build": {
     "beforeDevCommand": "npm run dev",
@@ -81,7 +81,7 @@
     "trayIcon": {
       "iconPath": "icons/icon.png",
       "iconAsTemplate": false,
-      "tooltip": "GPO Autofish"
+      "tooltip": "AutoFish Local"
     }
   },
   "bundle": {

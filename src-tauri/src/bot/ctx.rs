@@ -25,6 +25,7 @@ pub struct Ctx {
     pub mouse_held: AtomicBool,
     heartbeat_ms: AtomicU64,
     state: Mutex<(BotState, Instant)>,
+    capture_error: Mutex<Option<(String, Instant)>>,
     start: Instant,
 }
 
@@ -37,7 +38,7 @@ impl Ctx {
         webhook: Arc<WebhookQueue>,
         store: Arc<Store>,
     ) -> Self {
-        let session = Session::with_base(store.load_stats());
+        let session = Session::idle(store.load_stats());
         Self {
             platform,
             settings,
@@ -50,6 +51,7 @@ impl Ctx {
             mouse_held: AtomicBool::new(false),
             heartbeat_ms: AtomicU64::new(0),
             state: Mutex::new((BotState::Stopped, Instant::now())),
+            capture_error: Mutex::new(None),
             start: Instant::now(),
         }
     }
@@ -128,6 +130,23 @@ impl Ctx {
     }
     pub fn log_error(&self, m: &str) {
         self.log(LogLevel::Error, m)
+    }
+
+    pub fn capture_failed(&self, message: &str) {
+        let mut previous = self.capture_error.lock();
+        if previous
+            .as_ref()
+            .is_none_or(|(last, at)| last != message || at.elapsed() >= Duration::from_secs(5))
+        {
+            self.log_warn(&format!("Capture unavailable: {message}"));
+            *previous = Some((message.to_owned(), Instant::now()));
+        }
+    }
+
+    pub fn capture_recovered(&self) {
+        if self.capture_error.lock().take().is_some() {
+            self.log_info("Roblox capture recovered");
+        }
     }
 
     pub fn roblox_rect(&self) -> Option<PxRect> {

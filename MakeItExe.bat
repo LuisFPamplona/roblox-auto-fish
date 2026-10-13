@@ -18,6 +18,13 @@ if errorlevel 1 (
     echo Open a Visual Studio Developer PowerShell with MSVC and Windows SDK.
     exit /b 1
 )
+where link >nul 2>&1
+if errorlevel 1 exit /b 1
+where rc >nul 2>&1
+if errorlevel 1 (
+    echo Windows SDK is missing from the Developer PowerShell environment.
+    exit /b 1
+)
 call npm ci --ignore-scripts
 if errorlevel 1 exit /b 1
 call npm audit --audit-level=high
@@ -30,7 +37,15 @@ cargo check --manifest-path src-tauri\Cargo.toml --locked
 if errorlevel 1 exit /b 1
 cargo test --manifest-path src-tauri\Cargo.toml --locked
 if errorlevel 1 exit /b 1
-call npm run app:build -- -- --locked
+cargo clippy --manifest-path src-tauri\Cargo.toml --locked --all-targets -- -D warnings
 if errorlevel 1 exit /b 1
-echo Installer: src-tauri\target\release\bundle\nsis
+cargo fmt --manifest-path src-tauri\Cargo.toml --all -- --check
+if errorlevel 1 exit /b 1
+call npm run app:build -- --no-bundle -- --locked
+if errorlevel 1 exit /b 1
+if defined CARGO_TARGET_DIR (
+    echo Executable: %CARGO_TARGET_DIR%\release\gpo-autofish.exe
+) else (
+    echo Executable: src-tauri\target\release\gpo-autofish.exe
+)
 exit /b 0
